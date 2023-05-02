@@ -1,8 +1,14 @@
 library(EMLaide)
-library(tidyverse)
+library(dplyr)
 library(readxl)
 library(EML)
+library(httr)
 
+# Pull EDI user credentials from system environment ----------------------------
+user_id <- Sys.getenv("user_id")
+password <- Sys.getenv("password")
+
+# DEFINE ALL DATA PACKAGE ELEMENTS ---------------------------------------------
 datatable_metadata <-
   dplyr::tibble(filepath = c("data/catch.csv",
                              "data/trap.csv",
@@ -18,13 +24,13 @@ datatable_metadata <-
                                           "Daily trap operations and environmental data",
                                           "Recaptured catch from efficiency trials",
                                           "Release trial overview data",
-                                          "Individual data on released fish")
-                # datatable_url = paste0("https://raw.githubusercontent.com/FlowWest/rbdd-rst-edi/main/data/",
-                #                        c("catch.csv",
-                #                          "trap.csv",
-                #                          "recapture.csv",
-                #                          "release.csv",
-                #                          "data/release_fish.csv"))
+                                          "Individual data on released fish"),
+                datatable_url = paste0("https://raw.githubusercontent.com/FlowWest/rbdd-rst-edi/main/data/",
+                                       c("catch.csv",
+                                         "trap.csv",
+                                         "recapture.csv",
+                                         "release.csv",
+                                         "data/release_fish.csv"))
                 )
 # save cleaned data to `data/`
 excel_path <- "data-raw/RBDD_RST_DRAFT_Metadata_form_022823.xlsx"
@@ -35,8 +41,34 @@ names(metadata) <- sheets
 abstract_docx <- "data-raw/RBDD_RST_Abstract_022823.docx"
 methods_docx <- "data-raw/methods_link.md"
 
-# edi_number <- reserve_edi_id(user_id = Sys.getenv("user_id"), password = Sys.getenv("password"))
-edi_number <- "edi.1365.1" # reserved on March 1st, 2023
+# GET EDI NUMBER
+# TODO first version always intiated manually,
+# add into log or figure out way to do this manually
+vl <- readr::read_csv("data-raw/version_log.csv", col_types = c('c', "D"))
+if (nrow(vl) == 0) {
+  # reserve ID, and define below
+  current_edi_number <- reserve_edi_id(user_id = user_id,
+                                       password = password,
+                                       environment = "staging")
+  new_row <- data.frame(
+    edi_version = current_edi_number,
+    date = as.character(Sys.Date())
+  )
+} else {
+  previous_edi_number <- tail(vl['edi_version'], n=1)
+  identifier <- unlist(strsplit(previous_edi_number$edi_version, "\\."))[2]
+  previous_edi_ver <- as.numeric(stringr::str_extract(previous_edi_number, "[^.]*$"))
+  current_edi_ver <- as.character(previous_edi_ver + 1)
+  current_edi_number <- paste0("edi.", identifier, ".", current_edi_ver)
+
+  new_row <- data.frame(
+    edi_version = current_edi_number,
+    date = as.character(Sys.Date())
+  )
+}
+
+vl <- bind_rows(vl, new_row)
+readr::write_csv(vl, "data-raw/version_log.csv")
 
 dataset <- list() %>%
   add_pub_date() %>%
@@ -69,15 +101,38 @@ custom_units <- data.frame(id = c("number of rotations", "NTU", "revolutions", "
 
 unitList <- EML::set_unitList(custom_units)
 
-eml <- list(packageId = edi_number,
+eml <- list(packageId = current_edi_number,
             system = "EDI",
             access = add_access(),
             dataset = dataset,
             additionalMetadata = list(metadata = list(unitList = unitList))
 )
-edi_number
-EML::write_eml(eml, paste0(edi_number, ".xml"))
-EML::eml_validate(paste0(edi_number, ".xml"))
 
-# EMLaide::evaluate_edi_package(Sys.getenv("user_id"), Sys.getenv("password"), "edi.1365.1.xml")
+# Write eml document using eml list --------------------------------------------
+EML::write_eml(eml, paste0(current_edi_number, ".xml"))
+
+# Check for errors in EML document ---------------------------------------------
+EML::eml_validate(paste0(current_edi_number, ".xml"))
+
+# Call evaluation or update to EDI ---------------------------------------------
+old_id <- previous_edi_number$edi_version
+# Update on edi - call
+# TODO update after fixing EMLaide - evaluate to remove view statement
+# report_df <- EMLaide::evaluate_edi_package(user_id,
+#                               password,
+#                               eml_file_path = paste0(current_edi_number, ".xml"))
+#
+# if (any(report_df |> pull(Status) == "error")) {
+#   stop("Your XML did not pass the EDI congruency checker, please check XML and try again")
+# }
+# EMLaide::upload_edi_package(user_id = Sys.getenv("user_id"),
+#                             password = Sys.getenv("password"),
+#                             eml_file_path = "edi.1026.1.xml",
+#                             environment = "staging")
+#
+EMLaide::update_edi_package(user_id,
+                            password,
+                            existing_package_identifier = old_id,
+                            eml_file_path = paste0(current_edi_number, ".xml"),
+                            environment = "production")
 

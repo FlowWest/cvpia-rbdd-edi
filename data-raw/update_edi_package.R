@@ -1,9 +1,13 @@
-library(httr)
-library(tidyverse)
 library(EMLaide)
+library(dplyr)
+library(readxl)
+library(readr)
+library(EML)
+library(httr)
 library(lubridate)
+
 # Update tables
-# Get tables from blob storage - work with Inigo on developing pipeline (for now reading in new tables)
+# Get tables from blob storage - work with Inigo on developing pipeline and posting new tables in updated_tables_march
 
 updated_catch <- read_csv("data-raw/updated_tables_march/catch_update_12012022_02282023.csv") |>
   mutate(start_date = as_date(start_date, format = "%m/%d/%Y"),
@@ -45,18 +49,23 @@ min_date_updated_catch <- min(updated_catch$start_date, na.rm = T)
 min_date_updated_trap <- min(updated_trap$start_date, na.rm = T)
 
 version <- 1
+vl <- readr::read_csv("data-raw/version_log.csv", col_types = c('c', "D"))
+previous_edi_number <- tail(vl['edi_version'], n=1)
+identifier <- unlist(strsplit(previous_edi_number$edi_version, "\\."))[2]
+version <- as.numeric(stringr::str_extract(previous_edi_number, "[^.]*$"))
+
 # View existing tables
-httr::GET(url = "https://pasta.lternet.edu/package/name/eml/edi/1365/1", handle = httr::handle(""))
+httr::GET(url = paste0("https://pasta.lternet.edu/package/name/eml/edi/", identifier, "/", version), handle = httr::handle(""))
 # join existing tables with updated tables
 existing_catch <- httr::GET(
-  url = "https://pasta.lternet.edu/package/data/eml/edi/1365/1/58540ac4ed34ce05f3309510f4be91e5",
+  url = paste0("https://pasta.lternet.edu/package/data/eml/edi/", identifier, "/", version, "/58540ac4ed34ce05f3309510f4be91e5"),
   handle = httr::handle("")) |>
   httr::content() |>
   as_tibble() |>
   filter(start_date > min_date_updated_catch) |> glimpse()
 
 existing_trap <- httr::GET(
-  url = "https://pasta.lternet.edu/package/data/eml/edi/1365/1/eed3b61b7eb6030dafc9e4765f07a106",
+  url = paste0("https://pasta.lternet.edu/package/data/eml/edi/", identifier, "/", version, "/eed3b61b7eb6030dafc9e4765f07a106"),
   handle = httr::handle("")) |>
   httr::content() |>
   as_tibble() |>
@@ -73,9 +82,6 @@ write_csv(updated_trap, "data/trap.csv")
 # TODO need to save and push to github before running make metadata script (so it
 # can pull metadata of updated tables from github)
 
-#run make xml script
+#run make xml script & update data package
 source("data-raw/make_metadata_xml.R")
 
-# update data package api call
-# TODO figure out versioning
-EMLaide::update_edi_package_edi_package(Sys.getenv("user_id"), Sys.getenv("password"), "edi.1365.1", "edi.1365.1.xml")
