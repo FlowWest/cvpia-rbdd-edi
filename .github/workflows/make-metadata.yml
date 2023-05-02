@@ -1,0 +1,54 @@
+name: 'make metadata test'
+on:
+  push
+    # create:
+    #   branches:
+    #     - '*'
+jobs:
+  make-metadata:
+    runs-on: ubuntu-latest
+    container:
+      image: ipeng93/edi-workflow:latest
+    env:
+      R_REMOTES_NO_ERRORS_FROM_WARNINGS: true
+    steps:
+      - name: update package lists
+        run: sudo apt-get update
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
+      - uses: r-lib/actions/setup-pandoc@v2
+        with:
+          pandoc-version: '2.17.1'
+      - name: run create xml
+        run: |
+          source("data-raw/update_edi_package.R")
+        shell: Rscript {0}
+      - name: Print branch name
+        run: |
+          echo "Current branch: ${{github.ref_name }}"
+      - name: commit xml
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "updates xml"
+          git push
+      # - name: merge branch to main
+        # run: |
+          # git branch
+      #     git checkout upload-v2
+      #     git pull
+      #     git merge ${{ github.ref_name }} -m"merging validated upload branch to upload-v2"
+      #     git push
+      # - name: delete old branch
+      #   run: |
+      #     git branch -D ${{ github.ref_name }}
+      #     git push origin --delete ${{ github.ref_name }}
+      # - name: run shell script to delete previous xml version
+      #   run: |
+      #     chmod +x delete-file.sh
+      #     ./delete-file.sh
+      #     git commit -m "Remove previous xml version" -a
+      #     git push

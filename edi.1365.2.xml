@@ -1,0 +1,3095 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="edi.1365.2" system="EDI" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd">
+  <access authSystem="https://pasta.edirepository.org/authentication" order="allowFirst" scope="document">
+    <allow>
+      <principal>public</principal>
+      <permission>read</permission>
+    </allow>
+    <allow>
+      <principal>cvpia</principal>
+      <permission>write</permission>
+    </allow>
+  </access>
+  <dataset>
+    <shortName>RBDD RST Data</shortName>
+    <title>USFWS Red Bluff Diversion Dam Rotary Screw Trap Juvenile Fish Monitoring Database</title>
+    <creator>
+      <individualName>
+        <givenName>Scott</givenName>
+        <surName>Voss</surName>
+      </individualName>
+      <organizationName>USFWS</organizationName>
+      <electronicMailAddress>scott_voss@fws.gov</electronicMailAddress>
+    </creator>
+    <associatedParty>
+      <individualName>
+        <givenName>William</givenName>
+        <surName>Poytress</surName>
+      </individualName>
+      <organizationName>USFWS</organizationName>
+      <electronicMailAddress>bill_poytress@fws.gov</electronicMailAddress>
+      <role>principal investigator</role>
+    </associatedParty>
+    <pubDate>2023-04-12</pubDate>
+    <abstract>
+      <para>
+    The United States Fish and Wildlife Service (USFWS) has conducted
+    direct monitoring of juvenile Chinook Salmon Oncorhynchus
+    tshawytscha passage at the Red Bluff Diversion Dam (RBDD), river
+    kilometer (RKM) 391 on the Sacramento River, in Northern California
+    since 1994 (Johnson and Martin 1997). Martin et al. (2001) developed
+    quantitative methodologies for indexing juvenile Chinook passage
+    using rotary-screw traps (RST) to assess the impacts of the United
+    States Bureau of Reclamation’s (USBR) RBDD Research Pumping Plant.
+    Absolute abundance (passage and production) estimates were needed to
+    determine the level of impact from the entrainment of salmonids and
+    other fish community populations through RBDD’s experimental ‘fish
+    friendly’ Archimedes and internal helical pumps (Borthwick and
+    Corwin 2001). The original project objectives were met by 2000 and
+    funding of the project was discontinued.
+  </para>
+      <para>
+    From 2001 to 2008, funding was secured through a CALFED Bay-Delta
+    Program grant for annual monitoring operations to determine the
+    effects of restoration activities in the upper Sacramento River
+    aimed primarily at winter Chinook Salmon*. The USBR, the primary
+    proponent of the Central Valley Project (CVP), has funded this
+    project since 2010 due to regulatory requirements contained within
+    the National Marine Fisheries Service’s (NMFS) Biological Opinion
+    for the Long-term Operations of the CVP and State Water Project
+    (NMFS 2009 and 2019).
+  </para>
+      <para>
+    The project began sampling in 1994 with (4) 2.4-m diameter RST’s
+    which sampled through March of 2020. From March 25, 2020 through
+    June 25, 2020, in order to protect employee health and safety during
+    the Coronavirus global pandemic (COVID-19), sampling ceased. Just
+    prior to resuming sampling operations in July of 2020, (4) 1.5-m
+    diameter and one 2.4-m diameter RSTs were re-installed across the
+    transect at the RBDD site. This new five-trap configuration provides
+    a solution to sampling a location that has become shallower since
+    the RBDD gates were permanently placed in the raised position since
+    August of 2011.
+  </para>
+      <para>
+    The non-sampled period in 2020 impacted brood year (BY) 2020
+    late-fall Chinook Salmon Oncorhynchus tshawytscha passage estimates
+    and abundance indices for steelhead/Rainbow Trout O. mykiss and
+    Green Sturgeon Acipenser medirostris. No interpolation for missed
+    samples was performed during this extended break in sampling;
+    therefore, these data should be viewed cautiously and not used for
+    inter-annual comparisons.
+  </para>
+      <para>
+    The project estimates daily juvenile salmonid fish passage as total
+    passage along with fry (less than 46 mm FL) and pre-smolt/smolt
+    passage (greater than 45 mm TL) for all four runs of Chinook salmon
+    and O. mykiss. Production estimates are based on a calculated
+    fry-equivalent fish passage estimate that attempts to standardize
+    the passage of fry and pre-smolts alike for between year comparisons
+    of juvenile fish production (see methods doc for details).
+  </para>
+      <para>
+    The project relies upon a lest-squares regression equation to model
+    daily trap efficiency to estimate fish passage from daily trap
+    catch. A significant statistical correlation has been found between
+    trap efficiency and the amount of water sampled relative to total
+    volume passing the transect each day. Mark-recapture trials have
+    been conducted since 1996 and models have fluctuated in response to
+    changing river conditions and other factors. For instance, it was
+    decided to eliminate RBDD dam operation year trials from the
+    99-trial additive model after the dam was decommissioned as those
+    data were no longer relevant for future estimates of trap
+    efficiency. Model inputs continue to be evaluated and validated
+    annually with model updating occurring in July of each year,
+    coincident with winter Chinook juvenile passage initiation. Since
+    2017, winter Chinook catch and resultant passage estimates were
+    revised following genetic analyses of fin clips taken from juvenile
+    length-at-date spring Chinook each fall.
+  </para>
+      <para>
+    Relative abundance indices are calculated each year for Green
+    Sturgeon and various lamprey species including Pacific Lamprey
+    Entosphenus tridentata, Kern Brook Lamprey Lampetra hubbsi and River
+    Lamprey Lampetra ayresi. In most years, the majority of lamprey
+    caught are juveniles or ammocoetes and described as lamprey fry.
+    Relative abundance methods are detailed in a separate methods
+    document, but relative abundance is basically calculated as catch
+    per unit volume of water sampled (CPUV) and can be done for all
+    species encountered per trap, summed daily and then annually for an
+    index of production (see Martin et al. 2001).
+  </para>
+      <para>
+    *The National Marine Fisheries Service first listed winter Chinook
+    Salmon as threatened under the emergency listing procedures for the
+    ESA (16 U.S.C.R. 1531-1543) on August 4, 1989 (54 FR 32085). A
+    proposed rule to add winter Chinook Salmon to the list of threatened
+    species beyond expiration of the emergency rule was published by the
+    NMFS on March 20, 1990 (55 FR 10260). Winter Chinook Salmon were
+    formally added to the list of federally threatened species by final
+    rule on November 5, 1990 (55 FR 46515), and they were listed as a
+    federally endangered species on January 4, 1994 (59 FR 440).
+  </para>
+      <para>
+    The datasets contained in this data package are raw fish count, trap
+    operations, environmental, and efficiency trial data. USFWS
+    recommends using passage estimates on SacPass -
+    https://www.cbr.washington.edu/sacramento/data/query_redbluff_graph.html.
+    Any differing passage estimates generated from the raw data within
+    this data package are not supported by USFWS.
+  </para>
+    </abstract>
+    <keywordSet>
+      <keyword>monitoring</keyword>
+      <keyword>anadromous</keyword>
+      <keyword>juvenile</keyword>
+      <keyword>fish</keyword>
+      <keyword>chinook</keyword>
+      <keyword>rotary-screw trap</keyword>
+      <keyword>trout</keyword>
+      <keyword>lamprey</keyword>
+      <keyword>sturgeon</keyword>
+      <keyword>CVPIA</keyword>
+    </keywordSet>
+    <intellectualRights>
+      <para>This information is released under the Creative Commons license - Attribution - CC BY (https://creativecommons.org/licenses/by/4.0/). The consumer of these data ("Data User" herein) is required to cite it appropriately in any publication that results from its use. The Data User should realize that these data may be actively used by others for ongoing research and that coordination may be necessary to prevent duplicate publication. The Data User is urged to contact the authors of these data if any questions about methodology or results occur. Where appropriate, the Data User is encouraged to consider collaboration or co-authorship with the authors. The Data User should realize that misinterpretation of data may occur if used out of context of the original study. While substantial efforts are made to ensure the accuracy of data and associated documentation, complete accuracy of data sets cannot be guaranteed. All data are made available "as is." The Data User should be aware, however, that data are updated periodically and it is the responsibility of the Data User to check for new versions of the data. The data authors and the repository where these data were obtained shall not be liable for damages resulting from any use or misinterpretation of the data. Thank you.</para>
+    </intellectualRights>
+    <licensed>
+      <licenseName>Creative Commons Attribution 4.0 International</licenseName>
+      <url>https://spdx.org/licenses/CC-BY-4.0.html</url>
+      <identifier>CC-BY-4.0</identifier>
+    </licensed>
+    <coverage>
+      <geographicCoverage>
+        <geographicDescription>red bluff diversion dam site</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-122.2023</westBoundingCoordinate>
+          <eastBoundingCoordinate>-122.2014</eastBoundingCoordinate>
+          <northBoundingCoordinate>40.1534</northBoundingCoordinate>
+          <southBoundingCoordinate>40.1533</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>1995-07-01</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>2023-03-01</calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Clupeoidei</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Clupeidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Alosa</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>sapidissima</taxonRankName>
+                      <commonName>American Shad</commonName>
+                      <taxonId provider="https://itis.gov">AMS</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Percoidei</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Centrachidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Micropterus</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>salmoides</taxonRankName>
+                      <commonName>Black Bass</commonName>
+                      <taxonId provider="https://itis.gov">BB</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Perciformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Centrarchidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Lepomis</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>macrochirus</taxonRankName>
+                      <commonName>Bluegill</commonName>
+                      <taxonId provider="https://itis.gov">BGS</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Siluriformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Ictaluridae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Ameiurus</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>melas</taxonRankName>
+                      <commonName>Black Bullhead</commonName>
+                      <taxonId provider="https://itis.gov">BLB</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Perciformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Centrarchidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Pomoxis</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>nigromaculatus</taxonRankName>
+                      <commonName>Black Crappie</commonName>
+                      <taxonId provider="https://itis.gov">BLC</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Siluriformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Ictaluridae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Ameiurus</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>nebulosus</taxonRankName>
+                      <commonName>Brown Bullhead</commonName>
+                      <taxonId provider="https://itis.gov">BRB</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Salmoniformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Salmonidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Salmo</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>trutta</taxonRankName>
+                      <commonName>Brown Trout</commonName>
+                      <taxonId provider="https://itis.gov">BT</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Cypriniformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Cyprinidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Cyprinus</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>carpio</taxonRankName>
+                      <commonName>Common Carp</commonName>
+                      <taxonId provider="https://itis.gov">C</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Cypriniformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Cyprinidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Hesperoleucus</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>symmetricus</taxonRankName>
+                      <commonName>California Roach</commonName>
+                      <taxonId provider="https://itis.gov">CAR</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Perciformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Centrarchidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>n/p</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>n/p</taxonRankName>
+                      <commonName>Unknown Centrarchidae</commonName>
+                      <taxonId provider="https://itis.gov">CENFRY</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Perciformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Centrarchidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>n/p</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>n/a</taxonRankName>
+                      <commonName>Centrarchid Hybrid</commonName>
+                      <taxonId provider="https://itis.gov">CENHYB</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Siluriformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Ictaluridae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Ictalurus</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>punctatus</taxonRankName>
+                      <commonName>Channel Catfish</commonName>
+                      <taxonId provider="https://itis.gov">CHC</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Salmoniformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Salmonidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Oncorhyhchus</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>tshawytscha</taxonRankName>
+                      <commonName>Chinook Salmon</commonName>
+                      <taxonId provider="https://itis.gov">CHN</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Perciformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Cottidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Cottus</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>n/p</taxonRankName>
+                      <commonName>Cottus Fry</commonName>
+                      <taxonId provider="https://itis.gov">COTFRY</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Cypriniformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Cyprinidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>n/p</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>n/p</taxonRankName>
+                      <commonName>Unknown Cyprinidae</commonName>
+                      <taxonId provider="https://itis.gov">CYPFRY</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Cypriniformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Cyprinidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Rhinichthys</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>osculus</taxonRankName>
+                      <commonName>Speckled Dace</commonName>
+                      <taxonId provider="https://itis.gov">DACE</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Cypriniformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Cyprinidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Pimephales</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>promelas</taxonRankName>
+                      <commonName>Fathead Minnow</commonName>
+                      <taxonId provider="https://itis.gov">FHM</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Cypriniformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Cyprinidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Carassius</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>auratus</taxonRankName>
+                      <commonName>Goldfish</commonName>
+                      <taxonId provider="https://itis.gov">GF</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Perciformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Centrarchidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Lepomis</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>cyanellus</taxonRankName>
+                      <commonName>Green Sunfish</commonName>
+                      <taxonId provider="https://itis.gov">GSF</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Cypriniformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Cyprinidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Notemigonus</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>crysoleucas</taxonRankName>
+                      <commonName>Golden Shiner</commonName>
+                      <taxonId provider="https://itis.gov">GSN</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Acipenseriformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Acipenseridae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Acipenser</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>medirostris</taxonRankName>
+                      <commonName>Green Sturgeon</commonName>
+                      <taxonId provider="https://itis.gov">GST</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Cypriniformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Cyprinidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Lavinia</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>exilicauda</taxonRankName>
+                      <commonName>Hitch</commonName>
+                      <taxonId provider="https://itis.gov">HCH</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Cypriniformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Cyprinidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Mylopharodon</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>conocephalus</taxonRankName>
+                      <commonName>Hardhead</commonName>
+                      <taxonId provider="https://itis.gov">HH</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>n/p</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>n/p</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>n/p</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Ictaluridae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>n/p</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>n/p</taxonRankName>
+                      <commonName>Ictaluridae fry</commonName>
+                      <taxonId provider="https://itis.gov">ICTFry</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Cephalaspidomorphi</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Petromyzontiformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Petromizontidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Lampetra</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>hubbsi</taxonRankName>
+                      <commonName>Kern Brook Lamprey</commonName>
+                      <taxonId provider="https://itis.gov">KBL</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Cyprinidontiformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Cyprinodontidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Lucania</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>parva</taxonRankName>
+                      <commonName>Rainwater Killifish</commonName>
+                      <taxonId provider="https://itis.gov">KF</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Salmoniformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Salmonidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Oncorhynchus</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>nerka</taxonRankName>
+                      <commonName>Kokanee Salmon</commonName>
+                      <taxonId provider="https://itis.gov">KOK</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Cephalaspidomorphi</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Petromyzontiformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Petromyzontidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Lampetra</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>n/p</taxonRankName>
+                      <commonName>Unknown Lampetra</commonName>
+                      <taxonId provider="https://itis.gov">LFRY</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Perciformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Centrarchidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Micropterus</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>salmoides</taxonRankName>
+                      <commonName>Largemouth Bass</commonName>
+                      <taxonId provider="https://itis.gov">LMB</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Actinopterygii</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Perciformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Percidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Percina</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>macrolepida</taxonRankName>
+                      <commonName>BigScale LogPerch</commonName>
+                      <taxonId provider="https://itis.gov">LP</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Cyprinidontiformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Poeciliidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Gambusia</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>affinis</taxonRankName>
+                      <commonName>Western Mosquitofish</commonName>
+                      <taxonId provider="https://itis.gov">MQF</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Cephalaspidomorphi</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Petromyzontiformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Petromyzontidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Lampetra</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>pacifica</taxonRankName>
+                      <commonName>Pacific Brook Lamprey</commonName>
+                      <taxonId provider="https://itis.gov">PBL</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Salmoniformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Salmonidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Oncorhynchus</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>gorbuscha</taxonRankName>
+                      <commonName>Pink Salmon</commonName>
+                      <taxonId provider="https://itis.gov">PINK</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Cephalaspidomorphi</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Petromyzontiformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Petromyzontidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Entosphenus</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>tridentata</taxonRankName>
+                      <commonName>Pacific Lamprey</commonName>
+                      <taxonId provider="https://itis.gov">PL</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Perciformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Cottidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Cottus</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>asper</taxonRankName>
+                      <commonName>Prickly Sculpin</commonName>
+                      <taxonId provider="https://itis.gov">PRS</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Perciformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Centrarchidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Lepomis</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>gibbosus</taxonRankName>
+                      <commonName>Pumpkinseed</commonName>
+                      <taxonId provider="https://itis.gov">PS</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Salmoniformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Salmonidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Oncorhynchus</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>mykiss</taxonRankName>
+                      <commonName>Rainbow Trout</commonName>
+                      <taxonId provider="https://itis.gov">RBT</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Perciformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Centrarchidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Lepomis</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>microlophus</taxonRankName>
+                      <commonName>Redear Sunfish</commonName>
+                      <taxonId provider="https://itis.gov">RES</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Perciformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Cottidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Cottus</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>gulosus</taxonRankName>
+                      <commonName>Riffle Sculpin</commonName>
+                      <taxonId provider="https://itis.gov">RFS</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Cephalaspidomorphi</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Petromyzontiformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Petromizontidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Lampetra</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>ayresi</taxonRankName>
+                      <commonName>River Lamprey</commonName>
+                      <taxonId provider="https://itis.gov">RL</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Cypriniformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Cyprinidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Ptychocheilus</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>grandis</taxonRankName>
+                      <commonName>Sacramento Squawfish</commonName>
+                      <taxonId provider="https://itis.gov">SASQ</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Cypriniformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Catostomidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Catostomus</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>occidentalis</taxonRankName>
+                      <commonName>Sacramento Sucker</commonName>
+                      <taxonId provider="https://itis.gov">SASU</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Cypriniformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Cyprinidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Orthodon</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>microlepidotus</taxonRankName>
+                      <commonName>Sacramento Blackfish</commonName>
+                      <taxonId provider="https://itis.gov">SBF</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Perciformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Centrarchidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Micropterus</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>dolomieu</taxonRankName>
+                      <commonName>Smallmouth Bass</commonName>
+                      <taxonId provider="https://itis.gov">SMB</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Perciformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Centrarchidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Micropterus</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>punctulatus</taxonRankName>
+                      <commonName>Spotted Bass</commonName>
+                      <taxonId provider="https://itis.gov">SPB</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Cypriniformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Cyprinidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Pogonichthys</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>macrolepidotu</taxonRankName>
+                      <commonName>Sacramento Splittail</commonName>
+                      <taxonId provider="https://itis.gov">SPLT</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Acipenseriformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Acipenseridae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Acipenseridae</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>n/p</taxonRankName>
+                      <commonName>Sturgeon</commonName>
+                      <taxonId provider="https://itis.gov">ST</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Perciformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Percichthyidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Morone</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>saxatilis</taxonRankName>
+                      <commonName>Striped Bass</commonName>
+                      <taxonId provider="https://itis.gov">STB</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Clupeoidei</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Clupeidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Dorosoma</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>petenense</taxonRankName>
+                      <commonName>Threadfin Shad</commonName>
+                      <taxonId provider="https://itis.gov">TFS</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Perciformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Embiotocidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Hysterocarpus</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>traski</taxonRankName>
+                      <commonName>Tule Perch</commonName>
+                      <taxonId provider="https://itis.gov">TP</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Gasterosteiformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Gasterosteidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Gasterosteus</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>aculeatus</taxonRankName>
+                      <commonName>Threespine Stickleback</commonName>
+                      <taxonId provider="https://itis.gov">TSS</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Cypriniformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>n/p</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>n/p</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>n/p</taxonRankName>
+                      <commonName>Unknown Fry</commonName>
+                      <taxonId provider="https://itis.gov">Unfry</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>n/p</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>n/p</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>n/p</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>n/p</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>n/p</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>n/p</taxonRankName>
+                      <commonName>Unknown</commonName>
+                      <taxonId provider="https://itis.gov">UNID</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Perciformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Centrarchidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Lepomis</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>gulosus</taxonRankName>
+                      <commonName>Warmouth</commonName>
+                      <taxonId provider="https://itis.gov">W</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Cephalaspidomorphi</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Petromyzontiformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Petromyzontidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Lampetra</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>richardsoni</taxonRankName>
+                      <commonName>Western Brook Lamprey</commonName>
+                      <taxonId provider="https://itis.gov">WBL</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Siluriformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Ictaluridae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Ameiurus</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>catus</taxonRankName>
+                      <commonName>White Catfish</commonName>
+                      <taxonId provider="https://itis.gov">WHC</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Percoidei</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Centrarchidae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Pomoxis</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>annularis</taxonRankName>
+                      <commonName>White Crappie</commonName>
+                      <taxonId provider="https://itis.gov">WHS</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Acipenseriformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Acipenseridae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Acipenser</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>transmontanus</taxonRankName>
+                      <commonName>White Sturgeon</commonName>
+                      <taxonId provider="https://itis.gov">WST</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Animalia</taxonRankName>
+          <taxonRankValue>Animalia</taxonRankValue>
+          <taxonomicClassification>
+            <taxonRankName>Chordata</taxonRankName>
+            <taxonRankValue>Chordata</taxonRankValue>
+            <taxonomicClassification>
+              <taxonRankName>Osteichthyes</taxonRankName>
+              <taxonomicClassification>
+                <taxonRankName>Siluriformes</taxonRankName>
+                <taxonomicClassification>
+                  <taxonRankName>Ictaluridae</taxonRankName>
+                  <taxonomicClassification>
+                    <taxonRankName>Ameiurus</taxonRankName>
+                    <taxonomicClassification>
+                      <taxonRankName>natalis</taxonRankName>
+                      <commonName>Yellow Bullhead</commonName>
+                      <taxonId provider="https://itis.gov">YBH</taxonId>
+                    </taxonomicClassification>
+                  </taxonomicClassification>
+                </taxonomicClassification>
+              </taxonomicClassification>
+            </taxonomicClassification>
+          </taxonomicClassification>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+    </coverage>
+    <maintenance>
+      <description>ongoing</description>
+      <maintenanceUpdateFrequency>monthly</maintenanceUpdateFrequency>
+    </maintenance>
+    <contact>
+      <individualName>
+        <givenName>Scott</givenName>
+        <surName>Voss</surName>
+      </individualName>
+      <organizationName>USFWS</organizationName>
+      <electronicMailAddress>scott_voss@fws.gov</electronicMailAddress>
+    </contact>
+    <methods>
+      <methodStep>
+        <description>
+          <section>
+            <title>Please use the following link to access the full RBDD RST
+    methods:</title>
+            <para>
+      https://cvpia-data-stewardship.s3.us-west-1.amazonaws.com/rbdd-rst-data/RBDD_RST_Methods_022823.pdf
+    </para>
+          </section>
+        </description>
+      </methodStep>
+    </methods>
+    <project>
+      <title>USFWS Red Bluff Diversion Dam Rotary Screw Trap Juvenile Fish Monitoring Database</title>
+      <personnel>
+        <individualName>
+          <givenName>Scott</givenName>
+          <surName>Voss</surName>
+        </individualName>
+        <organizationName>USFWS</organizationName>
+        <electronicMailAddress>scott_voss@fws.gov</electronicMailAddress>
+        <role>Project Lead</role>
+      </personnel>
+      <award>
+        <funderName>United States Bureau of Reclamation</funderName>
+        <funderIdentifier>https://www.wikidata.org/wiki/Q1010548</funderIdentifier>
+        <awardNumber>R20PG00061</awardNumber>
+        <title>Interagency Agreement R20PG00061 Between&#13;
+U.S Department of the Interior, Bureau of Reclamation And U.S. Fish and Wildlife Service For Fish Monitoring Activities in Sacramento River, Clear Creek, and Battle Creek</title>
+      </award>
+    </project>
+    <dataTable>
+      <entityName>catch.csv</entityName>
+      <entityDescription>Daily catch data</entityDescription>
+      <physical>
+        <objectName>catch.csv</objectName>
+        <size unit="bytes">101792594</size>
+        <authentication method="MD5">da2f332d21d3c8a09fe6cb4679ca52b3</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://raw.githubusercontent.com/FlowWest/rbdd-rst-edi/main/data/catch.csv</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>catch_id</attributeName>
+          <attributeDefinition>Unique Identifier for catch table</attributeDefinition>
+          <measurementScale>
+            <ordinal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Unique Identifier for catch table</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </ordinal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>sample_row_id</attributeName>
+          <attributeDefinition>unique identifier for sample - joins catch table to trap table</attributeDefinition>
+          <measurementScale>
+            <ordinal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>unique identifier for sample - joins catch table to trap table</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </ordinal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>station_code</attributeName>
+          <attributeDefinition>Station code indicating where trap was located, corresponds to one of the rbdd gates</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Station code indicating where trap was located, corresponds to one of the rbdd gates</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>start_date</attributeName>
+          <attributeDefinition>Start date of sample</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD</formatString>
+              <dateTimeDomain>
+                <bounds>
+                  <minimum exclusive="false">34533</minimum>
+                  <maximum exclusive="false">44900</maximum>
+                </bounds>
+              </dateTimeDomain>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>start_time</attributeName>
+          <attributeDefinition>Start time of sample</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>hh:mm:ss</formatString>
+              <dateTimeDomain>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">1</maximum>
+                </bounds>
+              </dateTimeDomain>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>common_name</attributeName>
+          <attributeDefinition>Common name of fish species sampled in the trap</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Common name of fish species sampled in the trap</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>fork_length</attributeName>
+          <attributeDefinition>Fork length of fish caught in the trap</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>millimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">1000</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>dead</attributeName>
+          <attributeDefinition>Mortality status of fish caught in trap</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Mortality status of fish caught in trap</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>lifestage</attributeName>
+          <attributeDefinition>Lifestage of fish caught in trap, only record lifestage for steelhead/rainbow trout</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Lifestage of fish caught in trap, only record lifestage for steelhead/rainbow trout</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>weight</attributeName>
+          <attributeDefinition>weight of fish caught in trap</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>gram</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">1000</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>count</attributeName>
+          <attributeDefinition>number of fish</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>number of fish</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">100000</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>run</attributeName>
+          <attributeDefinition>Run of fish caught in trap, only recorded for chinook. Run determination using LAD criteria</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Run of fish caught in trap, only recorded for chinook. Run determination using LAD criteria</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>count_reference</attributeName>
+          <attributeDefinition>Count reference column provides additional information about the LHD of fish caught in trap</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>0</code>
+                    <definition>Juvenile YOY fish</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>1</code>
+                    <definition>Adult or Yearling fish</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>ad_pelvic</attributeName>
+          <attributeDefinition>Mark used to identify  winter run out of Battle Creek TRUE indicated contains ad pelvic mark</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Mark used to identify  winter run out of Battle Creek TRUE indicated contains ad pelvic mark</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>adipose_clipped</attributeName>
+          <attributeDefinition>Adipose clipped status TRUE indicates clipped adipose fin, all ad_pelvic fish are also adipose_clipped</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Adipose clipped status TRUE indicates clipped adipose fin, all ad_pelvic fish are also adipose_clipped</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>8664</numberOfRecords>
+    </dataTable>
+    <dataTable>
+      <entityName>trap.csv</entityName>
+      <entityDescription>Daily trap operations and environmental data</entityDescription>
+      <physical>
+        <objectName>trap.csv</objectName>
+        <size unit="bytes">5248135</size>
+        <authentication method="MD5">e34add43e4585f3200be9ae271708019</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://raw.githubusercontent.com/FlowWest/rbdd-rst-edi/main/data/trap.csv</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>sample_row_id</attributeName>
+          <attributeDefinition>unique identifier for sample - joins catch table to trap table</attributeDefinition>
+          <measurementScale>
+            <ordinal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>unique identifier for sample - joins catch table to trap table</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </ordinal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>sample_id</attributeName>
+          <attributeDefinition>unique identifier for trap sample table based on julian date and year. Indicates if sample was included in analysis. Samples excluded from analysis contain a .0</attributeDefinition>
+          <measurementScale>
+            <ordinal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>unique identifier for trap sample table based on julian date and year. Indicates if sample was included in analysis. Samples excluded from analysis contain a .0</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </ordinal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>start_date</attributeName>
+          <attributeDefinition>Start date of sample</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD</formatString>
+              <dateTimeDomain>
+                <bounds>
+                  <minimum exclusive="false">34533</minimum>
+                  <maximum exclusive="false">44900</maximum>
+                </bounds>
+              </dateTimeDomain>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>start_time</attributeName>
+          <attributeDefinition>Start time of sample</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>hh:mm:ss</formatString>
+              <dateTimeDomain>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">1</maximum>
+                </bounds>
+              </dateTimeDomain>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>station_code</attributeName>
+          <attributeDefinition>Station code indicating where trap was located, corresponds to one of the rbdd gates</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Station code indicating where trap was located, corresponds to one of the rbdd gates</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>counter</attributeName>
+          <attributeDefinition>Number read from digital counters mounted on each trap - indicated how many revolutions the trap has made since its last checking</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>revolutions</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">500000</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>gear_condition</attributeName>
+          <attributeDefinition>Operating condition of Rotary Screw Trap</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Operating condition of Rotary Screw Trap</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>trap_sample_type</attributeName>
+          <attributeDefinition>This field refers to the type of sampling conducted. Types include non-intenisze, sunrise/sunset, random mort and storm, random high flow</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>This field refers to the type of sampling conducted. Types include non-intenisze, sunrise/sunset, random mort and storm, random high flow</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>habitat</attributeName>
+          <attributeDefinition>This field refers to the type of flow the trap is sampling. A Run is described as a swiftly flowing reach with some surface agitation (wave train), no major flow obstructions and appears as a flooded riffle. A Glide is an area of water flowing smoothly and gently with low to moderate velocity and little or no surface turbulence.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>This field refers to the type of flow the trap is sampling. A Run is described as a swiftly flowing reach with some surface agitation (wave train), no major flow obstructions and appears as a flooded riffle. A Glide is an area of water flowing smoothly and gently with low to moderate velocity and little or no surface turbulence.</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>debris_tubs</attributeName>
+          <attributeDefinition>Indicates debris is taken from the trap’s live box is measured in a graduated grey tub as it is sorted through while looking for juvenile fish.</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>tubs</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">100</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>cone</attributeName>
+          <attributeDefinition>Describes if the cone is in full or half cone configuration</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Describes if the cone is in full or half cone configuration</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>fish_properly</attributeName>
+          <attributeDefinition>If the trap was fishing properly during sampling period</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>If the trap was fishing properly during sampling period</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>flow_cfs</attributeName>
+          <attributeDefinition>Flow in cubic ft per second at the trap site</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>cubicFeetPerSecond</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">100000</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>temperature</attributeName>
+          <attributeDefinition>temperature in degrees C at trap site</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <standardUnit>celsius</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">-20</minimum>
+                  <maximum exclusive="false">100</maximum>
+                </bounds>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>turbidity</attributeName>
+          <attributeDefinition>turbidity in NTUs at trap site</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>NTU</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">100</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>velocity</attributeName>
+          <attributeDefinition>Velocity in ft per second at the trap site</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>feetPerSecond</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">10</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>river_depth</attributeName>
+          <attributeDefinition>River depth at the trap site - max measureable depth is 9 ft, anytime river is deeper than 9 ft 99 is recorded</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>foot</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">10</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>gear</attributeName>
+          <attributeDefinition>gear identifier for RST</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>gear identifier for RST</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>diel</attributeName>
+          <attributeDefinition>Sub-field used during RMS, RHF and SS (random mort &amp; storm, random hi- flow, and sunrise/sunset) sampling and indicates which time period the sample was collected.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Sub-field used during RMS, RHF and SS (random mort &amp; storm, random hi- flow, and sunrise/sunset) sampling and indicates which time period the sample was collected.</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>sampling_weight</attributeName>
+          <attributeDefinition>Field to standardize fish capture and trap water volume sampled to the full 24 hour sample period when portions of the day and/or night are subsampled (e.g., RMS/RHF sampling) or incompletely sampled (e.g., N sampling)</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>unitless</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">2</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>location_in_river</attributeName>
+          <attributeDefinition>Describes the zone of the river that the trap is sampling. Generally, there are two traps sampling the mid channel (MC), one trap sampling as far as possible to the west noted as West Margin (WM), and one trap sampling as far as possible to the east noted as East Margin (EM).</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Describes the zone of the river that the trap is sampling. Generally, there are two traps sampling the mid channel (MC), one trap sampling as far as possible to the west noted as West Margin (WM), and one trap sampling as far as possible to the east noted as East Margin (EM).</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>volume</attributeName>
+          <attributeDefinition>Volume is a calculated field within the database that describes the volumne of water moving through the trap during a sampling event</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>cubicFeet</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">100000000</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>weather</attributeName>
+          <attributeDefinition>weather conditions at trap</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>weather conditions at trap</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>441</numberOfRecords>
+    </dataTable>
+    <dataTable>
+      <entityName>recapture.csv</entityName>
+      <entityDescription>Recaptured catch from efficiency trials</entityDescription>
+      <physical>
+        <objectName>recapture.csv</objectName>
+        <size unit="bytes">385956</size>
+        <authentication method="MD5">292fd604ae5258568cd7cbbf3fb3726d</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://raw.githubusercontent.com/FlowWest/rbdd-rst-edi/main/data/recapture.csv</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>mark_recap_id</attributeName>
+          <attributeDefinition>primary key to release table</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>primary key to release table</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>trial_id</attributeName>
+          <attributeDefinition>unique identifier for mark recapture trial</attributeDefinition>
+          <measurementScale>
+            <ordinal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>unique identifier for mark recapture trial</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </ordinal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>sample_date</attributeName>
+          <attributeDefinition>Start date of sample</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD</formatString>
+              <dateTimeDomain>
+                <bounds>
+                  <minimum exclusive="false">35864</minimum>
+                  <maximum exclusive="false">44900</maximum>
+                </bounds>
+              </dateTimeDomain>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>sample_time</attributeName>
+          <attributeDefinition>Start time of sample</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>hh:mm:ss</formatString>
+              <dateTimeDomain>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">1</maximum>
+                </bounds>
+              </dateTimeDomain>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>station_code</attributeName>
+          <attributeDefinition>Station code indicating where trap was located, corresponds to one of the rbdd gates</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Station code indicating where trap was located, corresponds to one of the rbdd gates</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>flows</attributeName>
+          <attributeDefinition>Flow at time of recapture</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>cubicFeetPerSecond</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">100000</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>mark_code</attributeName>
+          <attributeDefinition>code applied for mark recapture trial</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>code applied for mark recapture trial</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>fork_length</attributeName>
+          <attributeDefinition>Fork length of recaptured  fish</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>millimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">1000</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>count</attributeName>
+          <attributeDefinition>number of recaptured fish</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>number of fish</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">100000</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>dead</attributeName>
+          <attributeDefinition>Mortality status of fish caught in trap</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Mortality status of fish caught in trap</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>4353</numberOfRecords>
+    </dataTable>
+    <dataTable>
+      <entityName>release.csv</entityName>
+      <entityDescription>Release trial overview data</entityDescription>
+      <physical>
+        <objectName>release.csv</objectName>
+        <size unit="bytes">26504</size>
+        <authentication method="MD5">a7b4dca6cfbb6d1692fbca087408910b</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://raw.githubusercontent.com/FlowWest/rbdd-rst-edi/main/data/release.csv</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>mark_sample_row_id</attributeName>
+          <attributeDefinition>unique identifier</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>unique identifier</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>trial_id</attributeName>
+          <attributeDefinition>mark recapture trial identifier</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>mark recapture trial identifier</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>traps_fished</attributeName>
+          <attributeDefinition>number of traps fished throughout efficienty trial</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>number of traps</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">10</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>mark_code</attributeName>
+          <attributeDefinition>mark code applied to released fish</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>mark code applied to released fish</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>mark_date</attributeName>
+          <attributeDefinition>date mark code applied to fish</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD</formatString>
+              <dateTimeDomain>
+                <bounds>
+                  <minimum exclusive="false">34533</minimum>
+                  <maximum exclusive="false">44900</maximum>
+                </bounds>
+              </dateTimeDomain>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>mark_time</attributeName>
+          <attributeDefinition>time mark code applied</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>hh:mm:ss</formatString>
+              <dateTimeDomain>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">1</maximum>
+                </bounds>
+              </dateTimeDomain>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>release_site</attributeName>
+          <attributeDefinition>location fish released from for mark recapture trial</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>location fish released from for mark recapture trial</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>release_date</attributeName>
+          <attributeDefinition>date fish released</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD</formatString>
+              <dateTimeDomain>
+                <bounds>
+                  <minimum exclusive="false">34533</minimum>
+                  <maximum exclusive="false">44900</maximum>
+                </bounds>
+              </dateTimeDomain>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>release_time</attributeName>
+          <attributeDefinition>time fish released</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>hh:mm:ss</formatString>
+              <dateTimeDomain>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">1</maximum>
+                </bounds>
+              </dateTimeDomain>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>num_measured</attributeName>
+          <attributeDefinition>number of measured fish - each measured fish makes up one row in the release fish table</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>number of fish</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">100000</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>num_morts</attributeName>
+          <attributeDefinition>numbe of mortalities of marked fish</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>number of fish</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">100000</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>num_marked</attributeName>
+          <attributeDefinition>number of fish marked for release</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>number of fish</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">100000</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>num_released</attributeName>
+          <attributeDefinition>number of fish released</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>number of fish</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">100000</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>num_recap</attributeName>
+          <attributeDefinition>total number of fish recaptured</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>number of fish</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">100000</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>cone</attributeName>
+          <attributeDefinition>Describes if the cone is in full or half cone configuration</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Describes if the cone is in full or half cone configuration</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>gates</attributeName>
+          <attributeDefinition>Indicates if gates are in or out at release time</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Indicates if gates are in or out at release time</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>mean_turbidity</attributeName>
+          <attributeDefinition>mean turbidity at realease</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>NTU</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">100</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>run_designation</attributeName>
+          <attributeDefinition>Run of fish used for efficiency trials</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Run of fish used for efficiency trials</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>excluded</attributeName>
+          <attributeDefinition>Describes if this mark recapture trial shold be exclided from analyiss</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Describes if this mark recapture trial shold be exclided from analyiss</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>194</numberOfRecords>
+    </dataTable>
+    <dataTable>
+      <entityName>release_fish.csv</entityName>
+      <entityDescription>Individual data on released fish</entityDescription>
+      <physical>
+        <objectName>release_fish.csv</objectName>
+        <size unit="bytes">14</size>
+        <authentication method="MD5">3be7b8b182ccd96e48989b4e57311193</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://raw.githubusercontent.com/FlowWest/rbdd-rst-edi/main/data/data/release_fish.csv</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>mark_row_id</attributeName>
+          <attributeDefinition>unique identifier</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>unique identifier</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>mark_sample_row_id</attributeName>
+          <attributeDefinition>unique identifier to join with release overview table</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>unique identifier to join with release overview table</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>source</attributeName>
+          <attributeDefinition>source of fish, rbdd or hatchery, mix</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>source of fish, rbdd or hatchery, mix</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>fish_origin</attributeName>
+          <attributeDefinition>origin of fish used in mark recap - wild or hatchery</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>origin of fish used in mark recap - wild or hatchery</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>fork_length</attributeName>
+          <attributeDefinition>Fork length of fish used in mark recap</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>millimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">1000</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>count</attributeName>
+          <attributeDefinition>number of fish</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>number of fish</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">100000</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>dead</attributeName>
+          <attributeDefinition>Mortality status of fish</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Mortality status of fish</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>3355</numberOfRecords>
+    </dataTable>
+  </dataset>
+  <additionalMetadata>
+    <metadata>
+      <unitList>
+        <unit id="number of rotations" name="number of rotations" unitType="dimensionless">
+          <description>number of rotations</description>
+        </unit>
+        <unit id="NTU" name="NTU" unitType="dimensionless">
+          <description>nephelometric turbidity units, common unit for measuring turbidity</description>
+        </unit>
+        <unit id="revolutions" name="revolutions" unitType="dimensionless">
+          <description>number of trap revolutions per minute</description>
+        </unit>
+        <unit id="number of fish" name="number of fish" unitType="dimensionless">
+          <description>number of fish counted</description>
+        </unit>
+        <unit id="number of traps" name="number of traps" unitType="dimensionless">
+          <description>number of traps fishing</description>
+        </unit>
+        <unit id="tubs" name="tubs" unitType="dimensionless">
+          <description>number of tubs of debris collected in trap</description>
+        </unit>
+        <unit id="unitless" name="unitless" unitType="dimensionless">
+          <description>no units associated with this numeric measure</description>
+        </unit>
+        <unit id="cubicFeet" name="cubicFeet" unitType="dimensionless">
+          <description>cubic feet of</description>
+        </unit>
+      </unitList>
+    </metadata>
+  </additionalMetadata>
+</eml:eml>
