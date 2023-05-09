@@ -82,7 +82,9 @@ write_csv(updated_trap, "data/trap.csv")
 # Updated mark recap datasets
 updated_release <- read_csv("data-raw/updated_tables/rbdd_release.csv") |>
   mutate(mark_date = as_date(mark_date, format = "%m/%d/%Y"),
-         release_date = as_date(release_date, format = "%m/%d/%Y")) |> glimpse()
+         release_date = as_date(release_date, format = "%m/%d/%Y")) |>
+  rename(traps_fished = `Traps Fished`, cone = Cone, gates = `RBDD Gates`, excluded = `Exclude trial from analysis?`) |>
+  select(-comments) |> glimpse()
 
 updated_release_fish <- read_csv("data-raw/updated_tables/rbdd_release_fish.csv") |> glimpse()
 
@@ -108,7 +110,7 @@ existing_release <- httr::GET(
   as_tibble() |>
   filter(release_date > min_date_release) |> glimpse()
 
-exisitng_release_fish <-  httr::GET(
+existing_release_fish <-  httr::GET(
   url = paste0("https://pasta.lternet.edu/package/data/eml/edi/", identifier, "/", version, "/f1649215c4114b74d964b825d6371b66"),
   handle = httr::handle("")) |>
   httr::content() |>
