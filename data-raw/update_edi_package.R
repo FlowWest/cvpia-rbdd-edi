@@ -81,12 +81,16 @@ write_csv(updated_trap, "data/trap.csv")
 
 # Updated mark recap datasets
 updated_release <- read_csv("data-raw/updated_tables/rbdd_release.csv") |>
-  mutate(mark_date = as_date(mark_date, format = "%m/%d/%Y"),
-         release_date = as_date(release_date, format = "%m/%d/%Y")) |>
   rename(traps_fished = `Traps Fished`, cone = Cone, gates = `RBDD Gates`, excluded = `Exclude trial from analysis?`) |>
+  mutate(mark_date = as_date(mark_date, format = "%m/%d/%Y"),
+         release_date = as_date(release_date, format = "%m/%d/%Y"),
+         cone = as.numeric(cone),
+         excluded = ifelse("N", FALSE, TRUE)) |>
   select(-comments) |> glimpse()
 
-updated_release_fish <- read_csv("data-raw/updated_tables/rbdd_release_fish.csv") |> glimpse()
+updated_release_fish <- read_csv("data-raw/updated_tables/rbdd_release_fish.csv") |>
+  mutate(dead = ifelse(tolower(dead) == "yes", TRUE, FALSE)) |>
+  glimpse()
 
 updated_recapture_sum <- read_csv("data-raw/updated_tables/rbdd_recapture.csv") |>
   mutate(station_code = tolower(station_code)) |> glimpse()
@@ -97,6 +101,7 @@ updated_recapture_fish <- read_csv("data-raw/updated_tables/rbdd_recapture_fish.
 updated_recapture <- left_join(updated_recapture_fish, updated_recapture_sum,
                              by = c("mark_recap_row_id" = "recapture_row_id" )) |>
   select(mark_recap_id = recap_row_id, trial_id, sample_date, sample_time, station_code, flows, mark_code, fork_length, count, dead) |>
+  mutate(sample_date = as_date(sample_date, format = "%m/%d/%Y")) |>
   filter(!is.na(sample_date)) |>
   glimpse()
 
