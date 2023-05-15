@@ -30,7 +30,7 @@
       <electronicMailAddress>bill_poytress@fws.gov</electronicMailAddress>
       <role>principal investigator</role>
     </associatedParty>
-    <pubDate>2023-05-02</pubDate>
+    <pubDate>2023-05-15</pubDate>
     <abstract>
       <para>
     The United States Fish and Wildlife Service (USFWS) has conducted
@@ -2063,7 +2063,7 @@ U.S Department of the Interior, Bureau of Reclamation And U.S. Fish and Wildlife
           </measurementScale>
         </attribute>
       </attributeList>
-      <numberOfRecords>17151</numberOfRecords>
+      <numberOfRecords>2385</numberOfRecords>
     </dataTable>
     <dataTable>
       <entityName>trap.csv</entityName>
@@ -2438,7 +2438,7 @@ U.S Department of the Interior, Bureau of Reclamation And U.S. Fish and Wildlife
           </measurementScale>
         </attribute>
       </attributeList>
-      <numberOfRecords>854</numberOfRecords>
+      <numberOfRecords>142</numberOfRecords>
     </dataTable>
     <dataTable>
       <entityName>recapture.csv</entityName>
@@ -2614,7 +2614,7 @@ U.S Department of the Interior, Bureau of Reclamation And U.S. Fish and Wildlife
           </measurementScale>
         </attribute>
       </attributeList>
-      <numberOfRecords>4353</numberOfRecords>
+      <numberOfRecords>8746</numberOfRecords>
     </dataTable>
     <dataTable>
       <entityName>release.csv</entityName>
@@ -2931,7 +2931,7 @@ U.S Department of the Interior, Bureau of Reclamation And U.S. Fish and Wildlife
           </measurementScale>
         </attribute>
       </attributeList>
-      <numberOfRecords>194</numberOfRecords>
+      <numberOfRecords>390</numberOfRecords>
     </dataTable>
     <dataTable>
       <entityName>release_fish.csv</entityName>
@@ -3059,7 +3059,7 @@ U.S Department of the Interior, Bureau of Reclamation And U.S. Fish and Wildlife
           </measurementScale>
         </attribute>
       </attributeList>
-      <numberOfRecords>3355</numberOfRecords>
+      <numberOfRecords>6755</numberOfRecords>
     </dataTable>
   </dataset>
   <additionalMetadata>
