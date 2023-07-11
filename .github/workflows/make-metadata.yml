@@ -13,7 +13,7 @@ jobs:
       R_REMOTES_NO_ERRORS_FROM_WARNINGS: true
     steps:
       - name: update package lists
-        run: sudo apt-get update
+        run: sudo apt-get --allow-releaseinfo-change update
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
