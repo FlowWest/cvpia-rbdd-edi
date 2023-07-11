@@ -1,4 +1,136 @@
 sample_row_id,sample_id,start_date,start_time,station_code,counter,gear_condition,trap_sample_type,habitat,debris_tubs,cone,fish_properly,flow_cfs,temperature,turbidity,velocity,river_depth,gear,diel,sampling_weight,location_in_river,volume,weather
+33926,62_23,2023-03-02,15:35:00,gate 1,78475,normal,intensive (Storm/Mort),run,0.2,1,Y,7351,NA,13.8,2.65,99,RSTR5,D4,0.269,EM,224430.27,clear
+33927,62_23,2023-03-02,15:30:00,gate 5,67496,normal,intensive (Storm/Mort),run,0.5,1,Y,7351,NA,12.2,3.03,3.5,RSTR5,D4,0.257,MC,264308.19,clear
+33928,62_23,2023-03-02,15:25:00,gate 6,70961,normal,intensive (Storm/Mort),run,0.6,1,Y,7351,NA,11.3,3.56,5,RSTR8,D4,0.231,MC,877010.7,clear
+33929,62_23,2023-03-02,15:21:00,gate 7,7576,normal,intensive (Storm/Mort),run,0.2,1,Y,7351,NA,12,3.64,3.25,RSTR5,D4,0.249,MC,306297.31,clear
+33930,62_23,2023-03-02,15:18:00,gate 8,86893,normal,intensive (Storm/Mort),run,0.1,1,Y,7351,NA,12.2,2.68,4.6,RSTR5,D4,0.262,WM,254930.18,clear
+33931,62_23,2023-03-02,18:39:00,gate 1,79574,normal,intensive (Storm/Mort),run,0.4,1,Y,7351,NA,10.9,2.61,99,RSTR5,N1,0.205,EM,185658.14,clear
+33933,62_23,2023-03-02,18:03:00,gate 6,71635,normal,intensive (Storm/Mort),run,1.2,1,Y,7351,NA,12,3.6,5,RSTR8,N1,0.143,MC,573735.96,cloudy
+33935,62_23,2023-03-02,18:17:00,gate 8,88387,normal,intensive (Storm/Mort),run,0.2,1,Y,7351,NA,12.4,2.61,4.4,RSTR5,N1,0.226,WM,205204.43,cloudy
+33932,62_23,2023-03-02,18:26:00,gate 5,68749,normal,intensive (Storm/Mort),run,0.8,1,Y,7351,NA,10.8,3.59,3.6,RSTR5,N1,0.221,MC,249111.35,clear
+33934,62_23,2023-03-02,18:11:00,gate 7,9469,normal,intensive (Storm/Mort),run,0.2,1,Y,7351,NA,13.1,3.57,3.6,RSTR5,N1,0.238,MC,295247.57,clear
+33916,63_23,2023-03-03,09:23:00,gate 5,70325,normal,intensive (Storm/Mort),run,0.1,0.5,Y,6743,NA,9.35,3.34,3.5,RSTR5,D2,0.27,MC,285333.04,clear
+33925,63_23,2023-03-03,21:04:00,gate 8,92260,normal,intensive (Storm/Mort),run,0.2,1,Y,6743,NA,8.01,2.85,4.3,RSTR5,N2,0.266,WM,261606.71,cloudy
+33921,63_23,2023-03-03,21:08:00,gate 5,1630,normal,intensive (Storm/Mort),run,0.3,0.5,Y,6743,NA,8.84,3.38,4,RSTR5,N2,0.273,MC,318802.13,cloudy
+33920,63_23,2023-03-03,21:16:00,gate 1,81926,normal,intensive (Storm/Mort),run,0.1,1,Y,6743,NA,8.54,2.68,99,RSTR5,N2,0.281,EM,259720.97,cloudy
+33919,63_23,2023-03-03,09:34:00,gate 8,89944,normal,intensive (Storm/Mort),run,0.1,1,Y,6743,NA,9.11,3.1,4.7,RSTR5,D2,0.241,WM,236764.47,clear
+33918,63_23,2023-03-03,09:31:00,gate 7,11200,normal,intensive (Storm/Mort),run,0.1,0.5,Y,6743,NA,8.77,3.6,3,RSTR5,D2,0.251,MC,286613.24,clear
+33924,63_23,2023-03-03,21:00:00,gate 7,13501,normal,intensive (Storm/Mort),run,0.2,0.5,Y,6743,NA,9.04,3.53,3.2,RSTR5,N2,0.262,MC,319963.46,cloudy
+33917,63_23,2023-03-03,09:28:00,gate 6,72665,normal,intensive (Storm/Mort),run,0.1,0.5,Y,6743,NA,9.24,3.34,4.9,RSTR8,D2,0.247,MC,819037.44,clear
+33923,63_23,2023-03-03,20:57:00,gate 6,74065,normal,intensive (Storm/Mort),run,0.3,0.5,Y,6743,NA,8.5,3.4,4.9,RSTR8,N2,0.254,MC,984406.27,cloudy
+33915,63_23,2023-03-03,09:39:00,gate 1,80670,normal,intensive (Storm/Mort),run,0.1,1,Y,6743,NA,9.18,2.64,99,RSTR5,D2,0.257,EM,214775.45,clear
+33945,65_23,2023-03-05,15:10:00,gate 8,93923,normal,intensive (Storm/Mort),run,0.1,1,Y,7054,NA,6.57,3.21,4.7,RSTR5,D4,0.244,WM,268271.13,cloudy
+33944,65_23,2023-03-05,15:08:00,gate 7,15324,normal,intensive (Storm/Mort),run,0.3,1,Y,7054,NA,7.36,3.57,3.2,RSTR5,D4,0.257,MC,291914.25,cloudy
+33943,65_23,2023-03-05,15:14:00,gate 6,75169,normal,intensive (Storm/Mort),run,0.4,1,Y,7054,NA,6.51,3.34,4.8,RSTR8,D4,0.257,MC,903665.64,cloudy
+33942,65_23,2023-03-05,15:17:00,gate 5,3118,normal,intensive (Storm/Mort),run,0.2,1,Y,7054,NA,6.69,3.35,3.2,RSTR5,D4,0.263,MC,280364.02,cloudy
+33941,65_23,2023-03-05,15:21:00,gate 1,83106,normal,intensive (Storm/Mort),run,0.1,1,Y,7054,NA,8.47,2.55,99,RSTR5,D4,0.27,EM,218780.88,cloudy
+33938,65_23,2023-03-06,00:07:00,gate 6,76350,normal,intensive (Storm/Mort),run,0.3,1,Y,7054,NA,7.46,3.51,4.9,RSTR8,N3,0.253,MC,980442.23,clear
+33950,66_23,2023-03-06,06:37:00,gate 1,96496,normal,non-intensive,run,2.8,1,Y,7513,NA,10.7,2.92,99,RSTR5,NA,1.123611111,EM,2008867.41,cloudy
+33948,66_23,2023-03-06,06:25:00,gate 6,87352,normal,non-intensive,run,5.8,1,Y,7513,NA,7.2,3.97,5,RSTR8,NA,1.088888889,MC,9716630.37,cloudy
+33947,66_23,2023-03-06,06:28:00,gate 7,34905,normal,non-intensive,run,0.6,1,Y,7513,NA,8.91,3.42,3.9,RSTR5,NA,1.082638889,MC,2640835.01,cloudy
+33946,66_23,2023-03-06,06:30:00,gate 8,11406,normal,non-intensive,run,2.9,1,Y,7513,NA,11.9,2.92,4.5,RSTR5,NA,1.092361111,WM,2272006.15,cloudy
+33940,65_23,2023-03-06,00:00:00,gate 8,95603,normal,intensive (Storm/Mort),run,0.1,1,Y,7054,NA,9.02,3.2,4.3,RSTR5,N3,0.241,WM,264453.84,clear
+33939,65_23,2023-03-06,00:03:00,gate 7,17162,normal,intensive (Storm/Mort),run,0.1,1,Y,7054,NA,7.76,3.29,3.5,RSTR5,N3,0.248,MC,279586.74,clear
+33937,65_23,2023-03-06,00:10:00,gate 5,4761,normal,intensive (Storm/Mort),run,0.2,1,Y,7054,NA,7.63,3.35,3.5,RSTR5,N3,0.264,MC,303102.46,clear
+33936,65_23,2023-03-06,00:15:00,gate 1,84385,normal,intensive (Storm/Mort),run,0.1,1,Y,7054,NA,6.71,2.66,99,RSTR5,N3,0.27,EM,246952.27,clear
+33949,66_23,2023-03-06,06:34:00,gate 5,20163,normal,non-intensive,run,3,1,Y,7513,NA,9.17,3.02,3.9,RSTR5,NA,1.100694444,MC,2366719.52,cloudy
+33955,67_23,2023-03-07,08:43:00,gate 8,24171,normal,non-intensive,run,0.9,1,Y,8285,NA,10,3.04,4.5,RSTR5,NA,1.068055556,WM,2317760.33,clear
+33954,67_23,2023-03-07,08:27:00,gate 7,50860,normal,non-intensive,run,1.1,1,Y,8285,NA,9.22,2.89,4.2,RSTR5,NA,1.063888889,MC,2192803.31,clear
+33953,67_23,2023-03-07,08:33:00,gate 6,94333,normal,non-intensive,run,4,1,Y,8285,NA,9.62,3.72,6.5,RSTR8,NA,1.020138889,MC,8517711.34,clear
+33952,67_23,2023-03-07,08:59:00,gate 5,34576,normal,non-intensive,run,3,1,Y,8285,NA,9.38,3.52,4.3,RSTR5,NA,1.1,MC,2563947.54,clear
+33951,67_23,2023-03-07,09:35:00,gate 1,3443,partial block,non-intensive,run,2.5,1,Y,8285,NA,10.8,2.78,99,RSTR5,NA,1.052083333,EM,1936281.32,clear
+33960,68_23,2023-03-08,10:21:00,gate 8,35568,normal,non-intensive,run,0.9,1,Y,9705,NA,10.3,2.66,4.5,RSTR5,NA,0.934027778,WM,1773291.71,cloudy
+33957,68_23,2023-03-08,11:23:00,gate 5,46368,not rotating,non-intensive,run,4.1,1,Y,9705,NA,9.02,3.62,3.8,RSTR5,NA,0.923611111,MC,2210585.98,rainy
+33956,68_23,2023-03-08,10:50:00,gate 1,12186,normal,non-intensive,run,5.5,1,Y,9705,NA,11.7,2.59,99,RSTR5,NA,0.944444444,EM,1499266.33,cloudy
+33958,68_23,2023-03-08,09:02:00,gate 6,4439,normal,non-intensive,run,10.8,1,Y,9705,NA,9.23,3.6,5.7,RSTR8,NA,0.990972222,MC,7792661.35,cloudy
+33959,68_23,2023-03-08,09:59:00,gate 7,65602,normal,non-intensive,run,1.9,1,Y,9705,NA,10.3,3.65,3.7,RSTR5,NA,0.929861111,MC,2419956.29,cloudy
+33971,77_23,2023-03-17,13:25:00,gate 7,14632,normal,intensive (Storm/Mort),run,0.5,1,Y,14807,NA,80.8,3.55,6.3,RSTR5,D3,0.267,MC,339439.46,clear
+33970,77_23,2023-03-17,13:31:00,gate 5,6129,normal,intensive (Storm/Mort),run,1.7,1,Y,14807,NA,73.9,3.83,5.5,RSTR8,D3,0.269,MC,1163628.38,cloudy
+33972,77_23,2023-03-17,13:22:00,gate 8,48573,normal,intensive (Storm/Mort),run,0.2,1,Y,14807,NA,85.6,3.4,7.4,RSTR5,D3,0.26,WM,316192.5,clear
+33969,77_23,2023-03-17,13:35:00,gate 1,36650,normal,intensive (Storm/Mort),run,0.3,1,Y,14807,NA,77.1,2.49,99,RSTR5,D3,0.293,EM,242372.73,clear
+33968,77_23,2023-03-18,01:21:00,gate 8,51199,normal,intensive (Storm/Mort),run,0.5,1,Y,14807,NA,73.3,3.36,5.2,RSTR5,N3,0.297,WM,354575.43,clear
+33962,78_23,2023-03-18,13:12:00,gate 5,9276,normal,intensive (Storm/Mort),run,2.1,1,Y,12862,NA,60.5,3.65,5.1,RSTR8,D3,0.253,MC,1020644.89,cloudy
+33964,78_23,2023-03-18,13:03:00,gate 8,52876,normal,intensive (Storm/Mort),run,0.2,1,Y,12862,NA,61.9,3.27,6.6,RSTR5,D3,0.32,WM,375880.89,cloudy
+33966,77_23,2023-03-18,01:15:00,gate 5,7745,normal,intensive (Storm/Mort),run,2.5,1,Y,14807,NA,73.7,4.05,5.3,RSTR8,N3,0.253,MC,1143871.73,clear
+33963,78_23,2023-03-18,13:06:00,gate 7,19310,normal,intensive (Storm/Mort),run,0.5,1,Y,12862,NA,53.8,3.47,4.7,RSTR5,D3,0.247,MC,307171.38,cloudy
+33965,77_23,2023-03-18,01:26:00,gate 1,38035,normal,intensive (Storm/Mort),run,0.5,1,Y,14807,NA,64.2,2.63,99,RSTR5,N3,0.307,EM,265503.53,clear
+33967,77_23,2023-03-18,01:18:00,gate 7,17373,normal,intensive (Storm/Mort),run,0.4,1,Y,14807,NA,72.3,2.98,6,RSTR5,N3,0.285,MC,323567.55,clear
+33961,78_23,2023-03-18,13:16:00,gate 1,39263,normal,intensive (Storm/Mort),run,0.2,1,Y,12862,NA,60.7,2.82,99,RSTR5,D3,0.259,EM,262875.11,cloudy
+33979,78_23,2023-03-19,04:11:00,gate 5,10729,normal,intensive (Storm/Mort),run,3.6,1,Y,12862,NA,33,3.76,4.8,RSTR8,N4,0.234,MC,953076.93,rainy
+33984,79_23,2023-03-19,10:10:00,gate 7,19867,normal,intensive (Storm/Mort),run,2.6,1,Y,21034,NA,46.7,3.35,5.5,RSTR5,D2,0.242,MC,293159.79,rainy
+33985,79_23,2023-03-19,10:07:00,gate 8,56479,normal,intensive (Storm/Mort),run,5,1,Y,21034,NA,45.4,3.1,6.5,RSTR5,D2,0.238,WM,248034.86,rainy
+33978,78_23,2023-03-19,04:20:00,gate 1,40417,normal,intensive (Storm/Mort),run,0.7,1,Y,12862,NA,41.5,2.54,99,RSTR5,N4,0.245,EM,220316.25,rainy
+33980,78_23,2023-03-19,04:14:00,gate 7,19422,normal,intensive (Storm/Mort),run,0.5,1,Y,12862,NA,43.2,3.5,4.5,RSTR5,N4,0.239,MC,318006.64,rainy
+33981,78_23,2023-03-19,04:17:00,gate 8,54395,normal,intensive (Storm/Mort),run,0.5,1,Y,12862,NA,35.9,2.69,6.8,RSTR5,N4,0.241,WM,229011.67,rainy
+33982,79_23,2023-03-19,10:16:00,gate 1,41742,normal,intensive (Storm/Mort),run,0.5,1,Y,21034,NA,53.1,2.66,99,RSTR5,D2,0.255,EM,227167.3,rainy
+33983,79_23,2023-03-19,10:13:00,gate 5,12403,normal,intensive (Storm/Mort),run,4,1,Y,21034,NA,38.9,3.58,5,RSTR8,D2,0.252,MC,971376.76,rainy
+33987,79_23,2023-03-20,04:06:00,gate 5,14030,normal,intensive (Storm/Mort),run,4.7,1,Y,21034,NA,140,4.9,7.4,RSTR8,N4,0.251,MC,1392687.51,cloudy
+33989,79_23,2023-03-20,04:15:00,gate 8,58579,not rotating,intensive (Storm/Mort),run,1.6,1,Y,21034,NA,121,3.43,8.6,RSTR5,N4,0.242,WM,314069.28,cloudy
+33986,79_23,2023-03-20,04:20:00,gate 1,41776,normal,intensive (Storm/Mort),run,0.2,1,Y,21034,NA,98.9,1.07,99,RSTR5,N4,0.245,EM,85950.85,cloudy
+33988,79_23,2023-03-20,04:09:00,gate 7,22271,normal,intensive (Storm/Mort),run,2.3,1,Y,21034,NA,121,3.07,6,RSTR5,N4,0.259,MC,321162.48,cloudy
+33992,81_23,2023-03-21,10:20:00,gate 6,15950,normal,intensive (Storm/Mort),run,1.8,1,Y,14406,NA,47.6,5.11,6.8,RSTR8,D2,0.239,MC,1436771.34,cloudy
+33994,81_23,2023-03-21,10:17:00,gate 7,24804,normal,intensive (Storm/Mort),run,0.2,1,Y,14406,NA,56.6,3.43,6.4,RSTR5,D2,0.233,MC,289959.67,cloudy
+34000,81_23,2023-03-21,19:28:00,gate 8,62440,normal,intensive (Storm/Mort),run,0.3,1,Y,14406,NA,30.9,2.98,7,RSTR5,N1,0.206,WM,265668.23,rainy
+33999,81_23,2023-03-21,19:25:00,gate 7,26769,normal,intensive (Storm/Mort),run,0.4,1,Y,14406,NA,27.7,3.37,5.9,RSTR5,N1,0.254,MC,320474.86,rainy
+33998,81_23,2023-03-21,19:23:00,gate 6,17598,normal,intensive (Storm/Mort),run,1.5,1,Y,14406,NA,32,4.38,6.7,RSTR8,N1,0.224,MC,1079212.68,rainy
+33995,81_23,2023-03-21,10:15:00,gate 8,60686,normal,intensive (Storm/Mort),run,0.1,1,Y,14406,NA,45.5,3.17,7.3,RSTR5,D2,0.223,WM,257481.21,cloudy
+33991,81_23,2023-03-21,10:13:00,gate 1,42822,normal,intensive (Storm/Mort),run,0.1,1,Y,14406,NA,58.3,2.54,99,RSTR5,D2,0.265,EM,227286.85,cloudy
+33996,81_23,2023-03-21,19:35:00,gate 1,44274,normal,intensive (Storm/Mort),run,0.2,1,Y,14406,NA,30.9,2.79,99,RSTR5,N1,0.301,EM,272082.13,rainy
+33993,81_23,2023-03-21,10:08:00,gate 5,68749,normal,intensive (Storm/Mort),run,0.3,1,Y,14406,NA,46.4,2.56,5.9,RSTR5,D2,0.264,MC,263919.29,cloudy
+33997,81_23,2023-03-21,19:32:00,gate 5,71481,normal,intensive (Storm/Mort),run,0.5,1,Y,14406,NA,36.2,3.18,5.8,RSTR5,N1,0.287,MC,319751.64,rainy
+33974,82_23,2023-03-22,08:31:00,gate 5,88822,normal,non-intensive,run,4.4,1,Y,13538,NA,42.9,3.4,5.7,RSTR5,NA,1.022222222,MC,2476920.6,clear
+33973,82_23,2023-03-22,08:59:00,gate 1,55613,normal,non-intensive,run,3.8,1,Y,13538,NA,39.6,3.05,99,RSTR5,NA,1.046527778,EM,2110478.36,clear
+33975,82_23,2023-03-22,08:12:00,gate 6,29546,normal,non-intensive,run,12,1,Y,13538,NA,40.9,4.29,6.5,RSTR8,NA,1.035416667,MC,9714588.83,clear
+33977,82_23,2023-03-22,08:23:00,gate 8,75581,normal,non-intensive,run,1.6,1,Y,13538,NA,34.3,3.28,6.5,RSTR5,NA,1.095138889,WM,2560488.28,clear
+33976,82_23,2023-03-22,08:53:00,gate 7,42321,normal,non-intensive,run,2.1,1,Y,13538,NA,36.2,3.27,5.8,RSTR5,NA,1.054166667,MC,2639481.46,clear
+34004,83_23,2023-03-23,10:11:00,gate 7,44032,normal,non-intensive,run,2.5,1,Y,13600,NA,41.9,3.29,5.4,RSTR5,NA,0.996527778,MC,2334367.48,clear
+34001,83_23,2023-03-23,10:06:00,gate 1,66115,normal,non-intensive,run,4,1,Y,13600,NA,38.3,3.02,99,RSTR5,NA,1.057638889,EM,2111586.26,clear
+34002,83.0_23,2023-03-23,09:03:00,gate 5,14,normal,non-intensive,run,2.7,1,Y,13600,NA,34.5,3.11,5.2,RSTR5,NA,1.084722222,MC,2583313.52,clear
+34003,83_23,2023-03-23,09:03:00,gate 6,41199,normal,non-intensive,run,12.5,1,Y,13600,NA,34.5,3.91,6.5,RSTR8,NA,1.011805556,MC,8893751.43,clear
+34005,83_23,2023-03-23,10:40:00,gate 8,87856,normal,non-intensive,run,1.8,1,Y,13600,NA,34.9,2.95,5.8,RSTR5,NA,0.991666667,WM,2088476.78,clear
+34010,84_23,2023-03-24,10:28:00,gate 8,99153,normal,non-intensive,run,0.7,1,Y,11461,NA,31.9,2.84,5.7,RSTR5,NA,1.005555556,WM,2038554.27,clear
+34007,84_23,2023-03-24,11:05:00,gate 5,15888,normal,non-intensive,run,1.3,1,Y,11461,NA,28,3.29,4.75,RSTR5,NA,1.002083333,MC,2347078.87,clear
+34008,84_23,2023-03-24,09:20:00,gate 6,51992,normal,non-intensive,run,7,1,Y,11461,NA,27.5,3.9,6.3,RSTR8,NA,0.997916667,MC,8514521.64,clear
+34009,84_23,2023-03-24,10:06:00,gate 7,52196,normal,non-intensive,run,1.1,1,Y,11461,NA,27.2,2.85,5,RSTR5,NA,1.000694444,MC,2183739.93,clear
+34006,84_23,2023-03-24,11:29:00,gate 1,77714,normal,non-intensive,run,2.4,1,Y,11461,NA,32.4,2.87,99,RSTR5,NA,1.011805556,EM,1924038.98,clear
+34014,85_23,2023-03-25,10:07:00,gate 7,64569,normal,non-intensive,run,0.7,1,Y,10119,NA,16.7,3.03,4.8,RSTR5,NA,0.982638889,MC,2125339.31,clear
+34013,85_23,2023-03-25,09:17:00,gate 6,61889,normal,non-intensive,run,4.8,1,Y,10119,NA,15.9,3.34,5.7,RSTR8,NA,0.979861111,MC,7362513.34,clear
+34011,85_23,2023-03-25,11:46:00,gate 1,89511,normal,non-intensive,run,1,1,Y,10119,NA,17.9,2.96,99,RSTR5,NA,0.979166667,EM,1914997.74,clear
+34012,85_23,2023-03-25,11:08:00,gate 5,30406,normal,non-intensive,run,1.4,1,Y,10119,NA,17.9,3.31,4.8,RSTR5,NA,0.979166667,MC,2312015.66,clear
+34015,85_23,2023-03-25,10:36:00,gate 8,9149,normal,non-intensive,run,0.2,1,Y,10119,NA,16.7,2.74,5.7,RSTR5,NA,0.979166667,WM,1911824.22,clear
+34016,86_23,2023-03-26,11:16:00,gate 1,7274,normal,non-intensive,run,1.7,1,Y,9205,NA,20,3.09,99,RSTR5,NA,0.993055556,EM,2187544.58,clear
+34018,86_23,2023-03-26,08:48:00,gate 6,71873,normal,non-intensive,run,4.1,1,Y,9205,NA,20.9,3.5,5.5,RSTR8,NA,1.002083333,MC,7454538,clear
+34019,86_23,2023-03-26,09:42:00,gate 7,76485,normal,non-intensive,run,0.8,1,Y,9205,NA,18.3,3.32,5,RSTR5,NA,0.998611111,MC,2365737.07,clear
+34020,86_23,2023-03-26,10:06:00,gate 8,18625,normal,non-intensive,run,0.4,1,Y,9205,NA,17,2.6,5.5,RSTR5,NA,0.997222222,WM,1717164.52,clear
+34017,86_23,2023-03-26,10:38:00,gate 5,45081,normal,non-intensive,run,0.9,1,Y,9205,NA,18.3,3.02,4.5,RSTR5,NA,0.997916667,MC,2148355.26,clear
+34024,87_23,2023-03-27,13:11:00,gate 7,79571,normal,intensive (Storm/Mort),run,0.1,1,Y,8644,NA,15.7,3.28,4.3,RSTR5,D3,0.244,MC,276049.03,cloudy
+34025,87_23,2023-03-27,13:09:00,gate 8,20907,normal,intensive (Storm/Mort),run,0.2,1,Y,8644,NA,15.6,2.56,5.4,RSTR5,D3,0.241,WM,212951.94,cloudy
+34023,87_23,2023-03-27,13:14:00,gate 6,74898,normal,intensive (Storm/Mort),run,0.5,1,Y,8644,NA,13.2,3.78,5.6,RSTR8,D3,0.252,MC,1113848.11,cloudy
+34022,87_23,2023-03-27,13:16:00,gate 5,48497,normal,intensive (Storm/Mort),run,0.3,1,Y,8644,NA,12.1,2.95,4,RSTR5,D3,0.253,MC,277329.94,cloudy
+34030,87_23,2023-03-27,19:33:00,gate 8,22758,normal,intensive (Storm/Mort),run,0.1,1,Y,8644,NA,12.5,2.47,5.5,RSTR5,N1,0.261,WM,204643.62,rainy
+34021,87_23,2023-03-27,13:20:00,gate 1,1692,normal,intensive (Storm/Mort),run,0.7,1,Y,8644,NA,17.2,2.93,99,RSTR5,D3,0.26,EM,262263.05,cloudy
+34027,87_23,2023-03-27,19:36:00,gate 5,52140,normal,intensive (Storm/Mort),run,0.1,1,Y,8644,NA,11.9,2.89,4.4,RSTR5,N1,0.27,MC,266093.81,rainy
+34028,87_23,2023-03-27,19:28:00,gate 6,77213,normal,intensive (Storm/Mort),run,0.2,1,Y,8644,NA,18.4,3.5,5.5,RSTR8,N1,0.239,MC,876863.43,cloudy
+34029,87_23,2023-03-27,19:30:00,gate 7,82403,normal,intensive (Storm/Mort),run,0.2,1,Y,8644,NA,15.9,3.01,4.2,RSTR5,N1,0.254,MC,242108.33,cloudy
+34026,87_23,2023-03-27,19:40:00,gate 1,4392,normal,intensive (Storm/Mort),run,0.1,1,Y,8644,NA,14,2.61,99,RSTR5,N1,0.282,EM,233002.55,rainy
+34044,90_23,2023-03-30,16:27:00,gate 8,1440,normal,intensive (Storm/Mort),run,0.1,1,Y,13752,NA,45.2,3.63,6.5,RSTR5,D4,0.198,WM,289717.6,clear
+34037,90_23,2023-03-30,18:57:00,gate 8,3340,normal,intensive (Storm/Mort),run,0.2,1,Y,13752,NA,33.6,3.14,7,RSTR5,N1,0.288,WM,282867.52,cloudy
+34034,90_23,2023-03-30,19:04:00,gate 5,56456,normal,intensive (Storm/Mort),run,0.8,0.5,Y,13752,NA,28.9,3.27,5.6,RSTR5,N1,0.292,MC,299453.05,cloudy
+34035,90_23,2023-03-30,18:52:00,gate 7,86163,normal,intensive (Storm/Mort),run,0.1,0.5,Y,13752,NA,31.8,3.42,5.9,RSTR5,N1,0.285,MC,377665.84,cloudy
+34038,90_23,2023-03-30,16:36:00,gate 1,5468,normal,intensive (Storm/Mort),run,0.7,1,Y,13752,NA,48.5,2.71,99,RSTR5,D4,0.203,EM,191986.41,clear
+34039,90_23,2023-03-30,16:30:00,gate 5,54054,normal,intensive (Storm/Mort),run,1,0.5,Y,13752,NA,53.6,3.19,5.8,RSTR5,D4,0.226,MC,261341.43,clear
+34040,90_23,2023-03-30,16:21:00,gate 6,78549,normal,intensive (Storm/Mort),run,1.5,0.5,Y,13752,NA,41.9,4.85,6.8,RSTR8,D4,0.194,MC,1137356.15,clear
+34041,90_23,2023-03-30,16:24:00,gate 7,84072,normal,intensive (Storm/Mort),run,0.2,0.5,Y,13752,NA,42.1,3.41,5.7,RSTR5,D4,0.195,MC,249495.39,clear
+34033,90_23,2023-03-30,19:10:00,gate 1,6876,normal,intensive (Storm/Mort),run,0.2,1,Y,13752,NA,28.8,2.65,99,RSTR5,N1,0.297,EM,264596.49,cloudy
+34046,91_23,2023-03-31,22:18:00,gate 5,61093,normal,intensive (Storm/Mort),run,0.1,0.5,Y,11652,NA,43.8,3.36,5.1,RSTR5,N2,0.26,MC,272190.13,clear
+34052,91_23,2023-03-31,09:52:00,gate 7,89317,normal,intensive (Storm/Mort),run,0.5,0.5,Y,11652,NA,20.4,3.26,5.5,RSTR5,D2,0.262,MC,322678.13,cloudy
+34051,91_23,2023-03-31,09:49:00,gate 6,80172,normal,intensive (Storm/Mort),run,1.2,0.5,Y,11652,NA,24.5,4.33,6.25,RSTR8,D2,0.198,MC,1044163.05,clear
+34050,91_23,2023-03-31,09:57:00,gate 5,58617,normal,intensive (Storm/Mort),run,0.6,0.5,Y,11652,NA,25.1,3.26,5.25,RSTR5,D2,0.251,MC,308495.55,cloudy
+34049,91_23,2023-03-31,10:01:00,gate 1,8531,normal,intensive (Storm/Mort),run,0.5,1,Y,11652,NA,21.7,3.03,99,RSTR5,D2,0.261,EM,277216.47,cloudy
+34048,91_23,2023-03-31,22:11:00,gate 8,7331,normal,intensive (Storm/Mort),run,0.1,1,Y,11652,NA,48.5,3.41,6.2,RSTR5,N2,0.249,WM,264490.7,clear
+34047,91_23,2023-03-31,22:14:00,gate 7,91601,normal,intensive (Storm/Mort),run,0.1,1,Y,11652,NA,47.1,3.19,4.8,RSTR5,N2,0.254,MC,271832.04,clear
+34045,91_23,2023-03-31,22:23:00,gate 1,9905,normal,intensive (Storm/Mort),run,0.2,1,Y,11652,NA,45.5,2.61,99,RSTR5,N2,0.265,EM,215655.47,clear
+34053,91_23,2023-03-31,09:54:00,gate 8,5158,normal,intensive (Storm/Mort),run,0.3,1,Y,11652,NA,20.9,3.6,6.25,RSTR5,D2,0.265,WM,334143.75,cloudy
 33904,61_23,2023-03-01,17:56:00,gate 8,85328,normal,intensive (Storm/Mort),run,0.1,1,Y,9319,NA,63.7,3.11,4.4,RSTR5,N1,0.315,WM,307054.01,clear
 33901,61_23,2023-03-01,18:06:00,gate 5,65914,normal,intensive (Storm/Mort),run,0.4,1,Y,9319,NA,64.7,3.76,4.3,RSTR5,N1,0.262,MC,333146.94,clear
 33903,61_23,2023-03-01,18:01:00,gate 7,5743,normal,intensive (Storm/Mort),run,0.1,1,Y,9319,NA,63.9,3.38,3.5,RSTR5,N1,0.289,MC,329811.07,clear
