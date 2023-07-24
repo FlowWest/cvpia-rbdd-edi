@@ -134,5 +134,11 @@ EMLaide::update_edi_package(user_id,
                             password,
                             existing_package_identifier = old_id,
                             eml_file_path = paste0(current_edi_number, ".xml"),
-                            environment = "production")
+                            environment = "staging")
+
+# EMLaide::update_edi_package(user_id,
+#                             password,
+#                             existing_package_identifier = old_id,
+#                             eml_file_path = paste0(current_edi_number, ".xml"),
+#                             environment = "production")
 
