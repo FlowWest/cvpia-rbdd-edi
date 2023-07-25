@@ -10,6 +10,8 @@ jobs:
     container:
       image: ipeng93/edi-workflow:latest
     env:
+      user_id: ${{ secrets.EDI_USERNAME }}
+      password: ${{ secrets.EDI_PASSWORD }}
       R_REMOTES_NO_ERRORS_FROM_WARNINGS: true
     steps:
       - name: update package lists
