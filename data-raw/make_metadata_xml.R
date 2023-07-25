@@ -7,6 +7,8 @@ library(httr)
 # Pull EDI user credentials from system environment ----------------------------
 user_id <- Sys.getenv("user_id")
 password <- Sys.getenv("password")
+print(user_id)
+print(password)
 
 # DEFINE ALL DATA PACKAGE ELEMENTS ---------------------------------------------
 datatable_metadata <-
@@ -130,11 +132,6 @@ old_id <- previous_edi_number$edi_version
 #                             eml_file_path = "edi.1026.1.xml",
 #                             environment = "staging")
 #
-print(user_id)
-print(password)
-print(old_id)
-print(paste0(current_edi_number, ".xml"))
-
 EMLaide::update_edi_package(user_id,
                             password,
                             existing_package_identifier = old_id,
