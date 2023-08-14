@@ -10,7 +10,7 @@ library(lubridate)
 # Get tables from blob storage - work with Inigo on developing pipeline and posting new tables in updated_tables_march
 
 updated_catch <- read_csv("data-raw/updated_tables/rbdd_catch.csv") |>
-  mutate(start_date = as_date(start_date, format = "%m/%d/%y"),
+  mutate(start_date = as_date(start_date, format = "%m/%d/%Y"),
          dead = ifelse(tolower(dead) == "yes", TRUE, FALSE),
          run = case_when(run == "F" ~ "fall run",
                          run == "L" ~ "late fall run",
