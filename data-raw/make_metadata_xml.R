@@ -1,3 +1,4 @@
+remotes::install_github("CVPIA-OSC/EMLaide@api-error-handling")
 library(EMLaide)
 library(dplyr)
 library(readxl)
@@ -24,13 +25,14 @@ datatable_metadata <-
                                           "Daily trap operations and environmental data",
                                           "Recaptured catch from efficiency trials",
                                           "Release trial overview data",
-                                          "Individual data on released fish"),
-                datatable_url = paste0("https://raw.githubusercontent.com/FlowWest/rbdd-rst-edi/main/data/",
-                                       c("catch.csv",
-                                         "trap.csv",
-                                         "recapture.csv",
-                                         "release.csv",
-                                         "data/release_fish.csv"))
+                                          "Individual data on released fish")
+                # datatable_url = paste0("https://raw.githubusercontent.com/FlowWest/rbdd-rst-edi/main/data/",
+                #                        c("catch.csv",
+                #                          "trap.csv",
+                #                          "recapture.csv",
+                #                          "release.csv",
+                #                          "release_fish.csv")
+                #                        )
                 )
 # save cleaned data to `data/`
 excel_path <- "data-raw/RBDD_RST_DRAFT_Metadata_form_022823.xlsx"
@@ -118,9 +120,10 @@ EML::eml_validate(paste0(current_edi_number, ".xml"))
 old_id <- previous_edi_number$edi_version
 # Update on edi - call
 # TODO update after fixing EMLaide - evaluate to remove view statement
-# report_df <- EMLaide::evaluate_edi_package(user_id,
-#                               password,
-#                               eml_file_path = paste0(current_edi_number, ".xml"))
+report_df <- EMLaide::evaluate_edi_package(user_id,
+                              password,
+                              eml_file_path = paste0(current_edi_number, ".xml"))
+report_df
 #
 # if (any(report_df |> pull(Status) == "error")) {
 #   stop("Your XML did not pass the EDI congruency checker, please check XML and try again")
@@ -130,20 +133,17 @@ old_id <- previous_edi_number$edi_version
 #                             eml_file_path = "edi.1026.1.xml",
 #                             environment = "staging")
 #
-print(user_id)
-print(password)
-print(old_id)
-print(paste0(current_edi_number, ".xml"))
-
-EMLaide::update_edi_package(user_id,
-                            password,
-                            existing_package_identifier = old_id,
-                            eml_file_path = paste0(current_edi_number, ".xml"),
-                            environment = "staging")
-
+<<<<<<< HEAD
 # EMLaide::update_edi_package(user_id,
 #                             password,
 #                             existing_package_identifier = old_id,
 #                             eml_file_path = paste0(current_edi_number, ".xml"),
 #                             environment = "production")
+=======
+EMLaide::update_edi_package(user_id,
+                            password,
+                            existing_package_identifier = old_id,
+                            eml_file_path = paste0(current_edi_number, ".xml"),
+                            environment = "producation") # staging for now until automated updates working as expected
+>>>>>>> fec5f24 (updates dataset through may 2023)
 
