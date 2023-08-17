@@ -130,17 +130,6 @@ old_id <- previous_edi_number$edi_version
 #                             eml_file_path = "edi.1026.1.xml",
 #                             environment = "staging")
 #
-print(user_id)
-print(password)
-print(old_id)
-print(paste0(current_edi_number, ".xml"))
-
-EMLaide::update_edi_package(user_id,
-                            password,
-                            existing_package_identifier = old_id,
-                            eml_file_path = paste0(current_edi_number, ".xml"),
-                            environment = "staging")
-
 # EMLaide::update_edi_package(user_id,
 #                             password,
 #                             existing_package_identifier = old_id,
