@@ -10,7 +10,7 @@ library(lubridate)
 # Get tables from blob storage - work with Inigo on developing pipeline and posting new tables in updated_tables_march
 
 updated_catch <- read_csv("data-raw/updated_tables/rbdd_catch.csv") |>
-  mutate(start_date = as_date(start_date, format = "%m/%d/%Y"),
+  mutate(start_date = as_date(start_date, format = "%m/%d/%y"),
          dead = ifelse(tolower(dead) == "yes", TRUE, FALSE),
          run = case_when(run == "F" ~ "fall run",
                          run == "L" ~ "late fall run",
@@ -49,10 +49,10 @@ min_date_updated_catch <- as_date(min(updated_catch$start_date, na.rm = T))
 min_date_updated_trap <- as_date(min(updated_trap$start_date, na.rm = T))
 
 version <- 1
-# vl <- readr::read_csv("data-raw/version_log.csv", col_types = c('c', "D"))
-# previous_edi_number <- tail(vl['edi_version'], n=1)
-# identifier <- unlist(strsplit(previous_edi_number$edi_version, "\\."))[2]
-# version <- as.numeric(stringr::str_extract(previous_edi_number, "[^.]*$"))
+vl <- readr::read_csv("data-raw/version_log.csv", col_types = c('c', "D"))
+previous_edi_number <- tail(vl['edi_version'], n=1)
+identifier <- unlist(strsplit(previous_edi_number$edi_version, "\\."))[2]
+version <- as.numeric(stringr::str_extract(previous_edi_number, "[^.]*$"))
 
 # View existing tables
 httr::GET(url = paste0("https://pasta.lternet.edu/package/name/eml/edi/", identifier, "/", version), handle = httr::handle(""))
