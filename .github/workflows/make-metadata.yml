@@ -1,9 +1,9 @@
 name: 'make metadata test'
 on:
-  push
-    # create:
-    #   branches:
-    #     - '*'
+  # push
+    create:
+      branches:
+        - '*'
 jobs:
   make-metadata:
     runs-on: ubuntu-latest
