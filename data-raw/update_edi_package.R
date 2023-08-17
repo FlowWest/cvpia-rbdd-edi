@@ -45,14 +45,14 @@ updated_trap <- read_csv("data-raw/updated_tables/rbdd_trap.csv") |>
 
 # TODO will want to update any that have a new table posted in blob
 
-min_date_updated_catch <- min(updated_catch$start_date, na.rm = T)
-min_date_updated_trap <- min(updated_trap$start_date, na.rm = T)
+min_date_updated_catch <- as_date(min(updated_catch$start_date, na.rm = T))
+min_date_updated_trap <- as_date(min(updated_trap$start_date, na.rm = T))
 
 version <- 1
-vl <- readr::read_csv("data-raw/version_log.csv", col_types = c('c', "D"))
-previous_edi_number <- tail(vl['edi_version'], n=1)
-identifier <- unlist(strsplit(previous_edi_number$edi_version, "\\."))[2]
-version <- as.numeric(stringr::str_extract(previous_edi_number, "[^.]*$"))
+# vl <- readr::read_csv("data-raw/version_log.csv", col_types = c('c', "D"))
+# previous_edi_number <- tail(vl['edi_version'], n=1)
+# identifier <- unlist(strsplit(previous_edi_number$edi_version, "\\."))[2]
+# version <- as.numeric(stringr::str_extract(previous_edi_number, "[^.]*$"))
 
 # View existing tables
 httr::GET(url = paste0("https://pasta.lternet.edu/package/name/eml/edi/", identifier, "/", version), handle = httr::handle(""))
@@ -62,14 +62,14 @@ existing_catch <- httr::GET(
   handle = httr::handle("")) |>
   httr::content() |>
   as_tibble() |>
-  filter(start_date > min_date_updated_catch) |> glimpse()
+  filter(start_date < as.Date(min_date_updated_catch)) |> glimpse()
 
 existing_trap <- httr::GET(
   url = paste0("https://pasta.lternet.edu/package/data/eml/edi/", identifier, "/", version, "/eed3b61b7eb6030dafc9e4765f07a106"),
   handle = httr::handle("")) |>
   httr::content() |>
   as_tibble() |>
-  filter(start_date > min_date_updated_trap) |> glimpse()
+  filter(start_date < min_date_updated_trap) |> glimpse()
 
 # append updated tables to existing data and save to data/tables
 updated_catch <- bind_rows(existing_catch, updated_catch) |>  glimpse()
@@ -113,7 +113,7 @@ existing_release <- httr::GET(
   handle = httr::handle("")) |>
   httr::content() |>
   as_tibble() |>
-  filter(release_date > min_date_release) |> glimpse()
+  filter(release_date < min_date_release) |> glimpse()
 
 existing_release_fish <-  httr::GET(
   url = paste0("https://pasta.lternet.edu/package/data/eml/edi/", identifier, "/", version, "/f1649215c4114b74d964b825d6371b66"),
@@ -126,7 +126,7 @@ existing_recapture <- httr::GET(
   handle = httr::handle("")) |>
   httr::content() |>
   as_tibble() |>
-  filter(sample_date > min_date_recapture) |> glimpse()
+  filter(sample_date < min_date_recapture) |> glimpse()
 
 # TODO bind rows shows inconsistent col names from existing to updated = go in and
 # update updated table naming to match existing after reading in updated tables (lines 82 - 100)
