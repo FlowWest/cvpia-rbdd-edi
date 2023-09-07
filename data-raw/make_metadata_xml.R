@@ -139,10 +139,4 @@ report_df
 #                             existing_package_identifier = old_id,
 #                             eml_file_path = paste0(current_edi_number, ".xml"),
 #                             environment = "production")
-EMLaide::update_edi_package(user_id,
-                            password,
-                            existing_package_identifier = old_id,
-                            eml_file_path = paste0(current_edi_number, ".xml"),
-                            environment = "production") # staging for now until automated updates working as expected
-
 
