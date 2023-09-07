@@ -133,17 +133,16 @@ report_df
 #                             eml_file_path = "edi.1026.1.xml",
 #                             environment = "staging")
 #
-<<<<<<< HEAD
+
 # EMLaide::update_edi_package(user_id,
 #                             password,
 #                             existing_package_identifier = old_id,
 #                             eml_file_path = paste0(current_edi_number, ".xml"),
 #                             environment = "production")
-=======
 EMLaide::update_edi_package(user_id,
                             password,
                             existing_package_identifier = old_id,
                             eml_file_path = paste0(current_edi_number, ".xml"),
-                            environment = "producation") # staging for now until automated updates working as expected
->>>>>>> fec5f24 (updates dataset through may 2023)
+                            environment = "production") # staging for now until automated updates working as expected
+
 
