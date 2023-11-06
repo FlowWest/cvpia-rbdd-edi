@@ -119,7 +119,6 @@ EML::eml_validate(paste0(current_edi_number, ".xml"))
 # Call evaluation or update to EDI ---------------------------------------------
 old_id <- previous_edi_number$edi_version
 # Update on edi - call
-# TODO update after fixing EMLaide - evaluate to remove view statement
 report_df <- EMLaide::evaluate_edi_package(user_id,
                               password,
                               eml_file_path = paste0(current_edi_number, ".xml"))

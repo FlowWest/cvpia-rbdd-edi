@@ -75,6 +75,9 @@ existing_trap <- httr::GET(
 updated_catch <- bind_rows(existing_catch, updated_catch) |>  glimpse()
 updated_trap <- bind_rows(existing_trap, updated_trap) |> glimpse()
 
+summary(updated_catch)
+summary(updated_trap)
+
 #write csv
 write_csv(updated_catch, "data/catch.csv")
 write_csv(updated_trap, "data/trap.csv")
