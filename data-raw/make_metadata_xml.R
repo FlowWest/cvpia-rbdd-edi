@@ -1,4 +1,4 @@
-remotes::install_github("CVPIA-OSC/EMLaide@api-error-handling")
+remotes::install_github("CVPIA-OSC/EMLaide")
 library(EMLaide)
 library(dplyr)
 library(readxl)
@@ -6,6 +6,7 @@ library(EML)
 library(httr)
 
 # Pull EDI user credentials from system environment ----------------------------
+# TODO will need to update with new credential
 user_id <- Sys.getenv("user_id")
 password <- Sys.getenv("password")
 
@@ -25,14 +26,14 @@ datatable_metadata <-
                                           "Daily trap operations and environmental data",
                                           "Recaptured catch from efficiency trials",
                                           "Release trial overview data",
-                                          "Individual data on released fish")
-                # datatable_url = paste0("https://raw.githubusercontent.com/FlowWest/rbdd-rst-edi/main/data/",
-                #                        c("catch.csv",
-                #                          "trap.csv",
-                #                          "recapture.csv",
-                #                          "release.csv",
-                #                          "release_fish.csv")
-                #                        )
+                                          "Individual data on released fish"),
+                datatable_url = paste0("https://raw.githubusercontent.com/FlowWest/rbdd-rst-edi/main/data/",
+                                       c("catch.csv",
+                                         "trap.csv",
+                                         "recapture.csv",
+                                         "release.csv",
+                                         "release_fish.csv")
+                                       )
                 )
 # save cleaned data to `data/`
 excel_path <- "data-raw/RBDD_RST_DRAFT_Metadata_form_022823.xlsx"
@@ -98,11 +99,9 @@ custom_units <- data.frame(id = c("number of rotations", "NTU", "revolutions", "
                                            "number of tubs of debris collected in trap",
                                            "no units associated with this numeric measure",
                                            "cubic feet of"))
-#TODO check on
-# cubic feet, cubic feet per seccond, unitless, feet, feet per second, celcius, cubic feet per second, grams
-
 unitList <- EML::set_unitList(custom_units)
 
+# Create eml list --------------------------------------------------------------
 eml <- list(packageId = current_edi_number,
             system = "EDI",
             access = add_access(),

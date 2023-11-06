@@ -6,9 +6,11 @@ library(EML)
 library(httr)
 library(lubridate)
 
-# Update tables
-# Get tables from blob storage - work with Inigo on developing pipeline and posting new tables in updated_tables_march
+# Update tables ----------------------------------------------------------------
+# TODO before every update put new tables in data-raw/updated_tables folder
+# Then run script
 
+# process updated catch table
 updated_catch <- read_csv("data-raw/updated_tables/rbdd_catch.csv") |>
   mutate(start_date = as_date(start_date, format = "%m/%d/%Y"),
          dead = ifelse(tolower(dead) == "yes", TRUE, FALSE),
@@ -26,6 +28,7 @@ updated_catch <- read_csv("data-raw/updated_tables/rbdd_catch.csv") |>
          station_code = tolower(station_code)) |>
   select(-mark_code) |> glimpse()
 
+# process updated trap table
 updated_trap <- read_csv("data-raw/updated_tables/rbdd_trap.csv") |>
   mutate(start_date = as_date(start_date, format = "%m/%d/%Y"),
          weather = case_when(weather_code == "CLD" ~ "cloudy",
@@ -43,12 +46,12 @@ updated_trap <- read_csv("data-raw/updated_tables/rbdd_trap.csv") |>
         temperature = ifelse(temperature > 1000, NA, temperature)) |>
   select(-weather_code) |> glimpse()
 
-# TODO will want to update any that have a new table posted in blob
-
+# Pull min date of catch and trap tables
 min_date_updated_catch <- as_date(min(updated_catch$start_date, na.rm = T))
 min_date_updated_trap <- as_date(min(updated_trap$start_date, na.rm = T))
 
-version <- 1
+# pull version log number
+# version <- 1
 vl <- readr::read_csv("data-raw/version_log.csv", col_types = c('c', "D"))
 previous_edi_number <- tail(vl['edi_version'], n=1)
 identifier <- unlist(strsplit(previous_edi_number$edi_version, "\\."))[2]
@@ -78,13 +81,15 @@ updated_trap <- bind_rows(existing_trap, updated_trap) |> glimpse()
 summary(updated_catch)
 summary(updated_trap)
 
+# Save catch and trap tables ---------------------------------------------------
 #write csv
 write_csv(updated_catch, "data/catch.csv")
 write_csv(updated_trap, "data/trap.csv")
 
-# Updated mark recap datasets
+# Updated mark recap datasets --------------------------------------------------
 updated_release <- read_csv("data-raw/updated_tables/rbdd_release.csv") |>
-  rename(traps_fished = `Traps Fished`, cone = Cone, gates = `RBDD Gates`, excluded = `Exclude trial from analysis?`) |>
+  rename(traps_fished = `Traps Fished`, cone = Cone, gates = `RBDD Gates`,
+         excluded = `Exclude trial from analysis?`) |>
   mutate(mark_date = as_date(mark_date, format = "%m/%d/%Y"),
          release_date = as_date(release_date, format = "%m/%d/%Y"),
          cone = as.numeric(cone),
@@ -108,6 +113,7 @@ updated_recapture <- left_join(updated_recapture_fish, updated_recapture_sum,
   filter(!is.na(sample_date)) |>
   glimpse()
 
+# pull min date of release and recaps
 min_date_release <- min(updated_release$release_date, na.rm = T)
 min_date_recapture <- min(updated_recapture$sample_date, na.rm = T)
 
@@ -131,11 +137,11 @@ existing_recapture <- httr::GET(
   as_tibble() |>
   filter(sample_date < min_date_recapture) |> glimpse()
 
-# TODO bind rows shows inconsistent col names from existing to updated = go in and
-# update updated table naming to match existing after reading in updated tables (lines 82 - 100)
-# append updated tables to existing data and save to data/tables
+# Update release and recap tables
 updated_release <- bind_rows(existing_release, updated_release) |>  glimpse()
-updated_release_fish <- bind_rows(existing_release_fish, updated_release_fish) |> distinct() |> glimpse()
+updated_release_fish <- bind_rows(existing_release_fish, updated_release_fish) |>
+  distinct() |>
+  glimpse()
 updated_recapture <- bind_rows(existing_recapture, updated_recapture) |> glimpse()
 
 #write csv
